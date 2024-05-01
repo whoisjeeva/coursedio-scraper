@@ -5,6 +5,7 @@ from tqdm import tqdm
 import requests
 
 from core.github import Github
+from core.npm import Npm
 from core.scraper import Scraper
 
 
@@ -31,7 +32,8 @@ def main():
             GLOBAL_SLUGS.append(d["slug"])
             GLOBAL_DATA.append(d)
     
-    github = Github()
+    # github = Github()
+    npm = Npm()
     scraper = Scraper()
     print("[ STATUS ] Logging in...")
     scraper.login("33667870", "1609")
@@ -60,21 +62,25 @@ def main():
             
             
             print("[ STATUS ] Creating repo for course '" + str(c["title"]) + "'...")
-            repo = github.create_repo(uuid.uuid4().hex)
-            if repo is None:
-                raise Exception("Repo failed to create")
+            # repo = github.create_repo(uuid.uuid4().hex)
+            if not os.path.exists(course_slug):
+                os.mkdir(course_slug)
+            
+            # if repo is None:
+            #     raise Exception("Repo failed to create")
+            
             if course["excercise_file_url"] is not None:
-                download_file(scraper.session, course["excercise_file_url"], "ex.zip")
+                download_file(scraper.session, course["excercise_file_url"], f"{course_slug}/exercise.zip")
                 print("[ STATUS ] Uploading excercise files for '" + str(course["title"]) + "'...")
-                github.upload("ex.zip", f"{repo}.mp4", repo)
-                video_url = f"https://cdn.jsdelivr.net/gh/coursedio/{repo}/{repo}.zip"
+                # github.upload("ex.zip", f"{repo}.mp4", repo)
+                course["excercise_file_url"] = f"https://unpkg.com/coursedio-{course_slug}@1.0.1/exercise.zip"
 
-            for video in course["videos"]:
-                if os.path.exists("v.mp4"):
-                    os.remove("v.mp4")
+            for i, video in enumerate(course["videos"]):
+                # if os.path.exists("v.mp4"):
+                #     os.remove("v.mp4")
                     
-                if os.path.exists("subtitle.srt"):
-                    os.remove("subtitle.srt")
+                # if os.path.exists("subtitle.srt"):
+                #     os.remove("subtitle.srt")
                 
                 url = video["url"]
                 video_slug = url.split("/")[-1]
@@ -84,18 +90,17 @@ def main():
                 video_url = get_high_quality_video(video_details["streams"])["url"]
                 # upload video and subtitle and replace url
 
-                filename = uuid.uuid4().hex
                 
-                download_file(scraper.session, video_url, "v.mp4")
+                download_file(scraper.session, video_url, f"{course_slug}/{i}.mp4")
                 print("[ STATUS ] Uploading video '" + str(video["title"]) + "' from '" + str(c["title"]) + "'...")
-                github.upload("v.mp4", f"{filename}.mp4", repo)
-                video_url = f"https://cdn.jsdelivr.net/gh/coursedio/{repo}/{filename}.mp4"
+                # github.upload("v.mp4", f"{filename}.mp4", repo)
+                video_url = f"https://unpkg.com/coursedio-{course_slug}@1.0.1/{i}.mp4"
                 
                 try:
-                    download_file(scraper.session, subtitle_url, "subtitle.srt")
+                    download_file(scraper.session, subtitle_url, f"{course_slug}/{i}.srt")
                     print("[ STATUS ] Uploading subtitle '" + str(video["title"]) + "' from '" + str(c["title"]) + "'...")
-                    github.upload("subtitle.srt", f"{filename}.srt", repo)
-                    subtitle_url = f"https://cdn.jsdelivr.net/gh/coursedio/{repo}/{filename}.srt"
+                    # github.upload("subtitle.srt", f"{filename}.srt", repo)
+                    subtitle_url = f"https://unpkg.com/coursedio-{course_slug}@1.0.1/{i}.srt"
                 except Exception as e:
                     print(f"[ ERROR ] {e}")
                     subtitle_url = None
@@ -103,6 +108,7 @@ def main():
                 video["url"] = video_url
                 video["subtitle"] = subtitle_url
             
+            npm.publish(course_slug, course_slug)
             GLOBAL_DATA.append(course)
     
     with open("final_data.json", "w+") as f:
