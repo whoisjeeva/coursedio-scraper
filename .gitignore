@@ -3,3 +3,4 @@ subtitle.srt
 test.html
 data.json
 venv/
+__pycache__/
