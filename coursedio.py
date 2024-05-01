@@ -2,6 +2,7 @@ import json
 import uuid
 import os
 from tqdm import tqdm
+import requests
 
 from core.github import Github
 from core.scraper import Scraper
@@ -60,6 +61,8 @@ def main():
             
             print("[ STATUS ] Creating repo for course '" + str(c["title"]) + "'...")
             repo = github.create_repo(uuid.uuid4().hex)
+            if repo is None:
+                raise Exception("Repo failed to create")
             if course["excercise_file_url"] is not None:
                 download_file(scraper.session, course["excercise_file_url"], "ex.zip")
                 print("[ STATUS ] Uploading excercise files for '" + str(course["title"]) + "'...")
@@ -88,10 +91,14 @@ def main():
                 github.upload("v.mp4", f"{filename}.mp4", repo)
                 video_url = f"https://cdn.jsdelivr.net/gh/coursedio/{repo}/{filename}.mp4"
                 
-                download_file(scraper.session, subtitle_url, "subtitle.srt")
-                print("[ STATUS ] Uploading subtitle '" + str(video["title"]) + "' from '" + str(c["title"]) + "'...")
-                github.upload("subtitle.srt", f"{filename}.srt", repo)
-                subtitle_url = f"https://cdn.jsdelivr.net/gh/coursedio/{repo}/{filename}.srt"
+                try:
+                    download_file(scraper.session, subtitle_url, "subtitle.srt")
+                    print("[ STATUS ] Uploading subtitle '" + str(video["title"]) + "' from '" + str(c["title"]) + "'...")
+                    github.upload("subtitle.srt", f"{filename}.srt", repo)
+                    subtitle_url = f"https://cdn.jsdelivr.net/gh/coursedio/{repo}/{filename}.srt"
+                except Exception as e:
+                    print(f"[ ERROR ] {e}")
+                    subtitle_url = None
                 
                 video["url"] = video_url
                 video["subtitle"] = subtitle_url
@@ -103,19 +110,22 @@ def main():
 
 
 def download_file(session, url, filepath):
-    response = session.get(url, stream=True)
+    try:
+        response = session.get(url, stream=True)
 
-    total_size = int(response.headers.get("content-length", 0))
-    block_size = 1024
+        total_size = int(response.headers.get("content-length", 0))
+        block_size = 1024
 
-    with tqdm(total=total_size, unit="B", unit_scale=True) as progress_bar:
-        with open(filepath, "wb") as file:
-            for data in response.iter_content(block_size):
-                progress_bar.update(len(data))
-                file.write(data)
+        with tqdm(total=total_size, unit="B", unit_scale=True) as progress_bar:
+            with open(filepath, "wb") as file:
+                for data in response.iter_content(block_size):
+                    progress_bar.update(len(data))
+                    file.write(data)
 
-    if total_size != 0 and progress_bar.n != total_size:
-        raise RuntimeError("Could not download file")
+        if total_size != 0 and progress_bar.n != total_size:
+            raise RuntimeError("Could not download file")
+    except requests.exceptions.ChunkedEncodingError:
+        download_file(session, url, filepath)
 
 
 def get_high_quality_video(streams):

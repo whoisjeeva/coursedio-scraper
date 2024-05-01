@@ -308,48 +308,51 @@ class Scraper:
 
 
     def get_video_details(self, course_slug, video_slug):
-        r = self.session.get(f"https://www.linkedin.com/learning-api/videos?parentSlug={course_slug}&q=slugs&slug={video_slug}", headers={
-            "csrf-token": self.csrf,
-            "X-Requested-With": "XMLHttpRequest"
-        })
-        video = r.json()
-        streams = []
-        element = None
-
-        # with open("streams.json", "w") as f:
-        #     json.dump(video, f, indent=4)
-
-        for el in video["elements"]:
-            if "entityType" in el:
-                if el["entityType"] == "VIDEO":
-                    element = el
-                    break
-
-        for v in element["presentation"]["videoPlay"]["videoPlayMetadata"]["progressiveStreams"]:
-            video_url = v["streamingLocations"][0]["url"]
-            if "audio" in video_url:
-                continue
-            streams.append({
-                "height": v["height"],
-                "width": v["width"],
-                "video_type": v["mediaType"],
-                "url": video_url,
-                "expire": v["streamingLocations"][0]["expiresAt"],
-                "slug": f"{course_slug}/{video_slug}"
-            })
-
         try:
-            subtitle = element["presentation"]["videoPlay"]["videoPlayMetadata"]["transcripts"][0]["captionFile"]
-        except:
-            subtitle = ""
-        hls = element["presentation"]["videoPlay"]["videoPlayMetadata"]["adaptiveStreams"]
-        hls_url = None
-        hls_expire = None
-        if len(hls) > 0:
-            hls_url = hls[0]["masterPlaylists"][0]["url"]
-            hls_expire = hls[0]["masterPlaylists"][0]["expiresAt"]
+            r = self.session.get(f"https://www.linkedin.com/learning-api/videos?parentSlug={course_slug}&q=slugs&slug={video_slug}", headers={
+                "csrf-token": self.csrf,
+                "X-Requested-With": "XMLHttpRequest"
+            })
+            video = r.json()
+            streams = []
+            element = None
 
-        return {"subtitle": subtitle, "streams": streams, "hls": hls_url, "hls_expire": hls_expire}
+            # with open("streams.json", "w") as f:
+            #     json.dump(video, f, indent=4)
+
+            for el in video["elements"]:
+                if "entityType" in el:
+                    if el["entityType"] == "VIDEO":
+                        element = el
+                        break
+
+            for v in element["presentation"]["videoPlay"]["videoPlayMetadata"]["progressiveStreams"]:
+                video_url = v["streamingLocations"][0]["url"]
+                if "audio" in video_url:
+                    continue
+                streams.append({
+                    "height": v["height"],
+                    "width": v["width"],
+                    "video_type": v["mediaType"],
+                    "url": video_url,
+                    "expire": v["streamingLocations"][0]["expiresAt"],
+                    "slug": f"{course_slug}/{video_slug}"
+                })
+
+            try:
+                subtitle = element["presentation"]["videoPlay"]["videoPlayMetadata"]["transcripts"][0]["captionFile"]
+            except:
+                subtitle = ""
+            hls = element["presentation"]["videoPlay"]["videoPlayMetadata"]["adaptiveStreams"]
+            hls_url = None
+            hls_expire = None
+            if len(hls) > 0:
+                hls_url = hls[0]["masterPlaylists"][0]["url"]
+                hls_expire = hls[0]["masterPlaylists"][0]["expiresAt"]
+
+            return {"subtitle": subtitle, "streams": streams, "hls": hls_url, "hls_expire": hls_expire}
+        except requests.exceptions.ConnectionError:
+            return self.get_video_details(course_slug, video_slug)
 
 
     def get_suggestions(self, query):

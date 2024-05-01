@@ -6,7 +6,7 @@ import base64
 
 class Github:
     def __init__(self):
-        self.token = "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"
+        self.token = ""
         
     def upload(self, filepath, uploadpath, repo):
         headers = {
