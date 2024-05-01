@@ -31,8 +31,8 @@ class Scraper:
             "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
             "Accept-Language": "en-US,en;q=0.9"
         })
-        with open("test.html", "wb") as f:
-            f.write(r.content) 
+        # with open("test.html", "wb") as f:
+        #     f.write(r.content) 
         s = BeautifulSoup(r.content, "html.parser")
 
         csrfToken = s.find("form").select("[name='csrfToken']")[0]["value"]
@@ -316,8 +316,8 @@ class Scraper:
         streams = []
         element = None
 
-        with open("streams.json", "w") as f:
-            json.dump(video, f, indent=4)
+        # with open("streams.json", "w") as f:
+        #     json.dump(video, f, indent=4)
 
         for el in video["elements"]:
             if "entityType" in el:
