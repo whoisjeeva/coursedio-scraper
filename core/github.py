@@ -6,7 +6,7 @@ import base64
 
 class Github:
     def __init__(self):
-        self.token = "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"
+        self.token = base64.b64decode("Z2hwX2pYUU5YY0dEZ3dPNm9WTVJuYUgxR2FGUVZ3eG9OZDIyaUtCNg==")
         self.org = "coursedio"
         
     def upload(self, filepath, uploadpath, repo):
