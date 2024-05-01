@@ -1,5 +1,5 @@
 import json
-import uuid
+import sys
 import os
 from tqdm import tqdm
 import requests
@@ -7,6 +7,7 @@ import requests
 from core.github import Github
 from core.npm import Npm
 from core.scraper import Scraper
+from core.argparse import ArgParse
 
 
 GLOBAL_DATA = []
@@ -14,8 +15,28 @@ GLOBAL_SLUGS = []
 
 
 def main():
-    with open("data.json", "r") as f:
-        data = json.load(f)
+    parser = ArgParse(argument_space_count=20, usage="coursedio [options]")
+    parser.add_argument(["--help", "-h"], description="show help", is_flag=True)
+    parser.add_argument(["--slug"], description="course slug")
+    parser.add_argument(["--category"], description="course category")
+    parser.add_argument(["--skills"], description="course skills")
+    args = parser.parse()
+    
+    if args.help:
+        parser.print_help()
+        sys.exit(0)
+
+    if args.slug:
+        data = [{
+            "category": args.category,
+            "courses": [{
+                "slug": args.slug,
+                "skills": args.skills.split(",")
+            }]
+        }]
+    else:
+        with open("data.json", "r") as f:
+            data = json.load(f)
     
     progress_data = []
     if os.path.exists("progress_output.json"):
@@ -63,17 +84,21 @@ def main():
             
             print("[ STATUS ] Creating repo for course '" + str(c["title"]) + "'...")
             # repo = github.create_repo(uuid.uuid4().hex)
-            if not os.path.exists(course_slug):
-                os.mkdir(course_slug)
             
             # if repo is None:
             #     raise Exception("Repo failed to create")
             
             if course["excercise_file_url"] is not None:
-                download_file(scraper.session, course["excercise_file_url"], f"{course_slug}/exercise.zip")
+                folder = f"coursedio-{course_slug}-excercise"
+                if not os.path.exists(folder):
+                    os.mkdir(folder)
+                download_file(scraper.session, course["excercise_file_url"], f"{folder}/exercise.zip")
                 print("[ STATUS ] Uploading excercise files for '" + str(course["title"]) + "'...")
                 # github.upload("ex.zip", f"{repo}.mp4", repo)
-                course["excercise_file_url"] = f"https://unpkg.com/coursedio-{course_slug}@1.0.1/exercise.zip"
+                npm.publish(folder, folder)
+                course["excercise_file_url"] = f"https://unpkg.com/{folder}@1.0.1/exercise.zip"
+            else:
+                course["excercise_file_url"] = None
 
             for i, video in enumerate(course["videos"]):
                 # if os.path.exists("v.mp4"):
@@ -90,28 +115,31 @@ def main():
                 video_url = get_high_quality_video(video_details["streams"])["url"]
                 # upload video and subtitle and replace url
 
-                
-                download_file(scraper.session, video_url, f"{course_slug}/{i}.mp4")
+                folder = f"coursedio-{course_slug}-{video_slug}"
+                if not os.path.exists(folder):
+                    os.mkdir(folder)
+                download_file(scraper.session, video_url, f"{folder}/video.mp4")
                 print("[ STATUS ] Uploading video '" + str(video["title"]) + "' from '" + str(c["title"]) + "'...")
                 # github.upload("v.mp4", f"{filename}.mp4", repo)
-                video_url = f"https://unpkg.com/coursedio-{course_slug}@1.0.1/{i}.mp4"
+                video_url = f"https://unpkg.com/{folder}@1.0.1/video.mp4"
                 
                 try:
-                    download_file(scraper.session, subtitle_url, f"{course_slug}/{i}.srt")
+                    download_file(scraper.session, subtitle_url, f"{folder}/subtitle.srt")
                     print("[ STATUS ] Uploading subtitle '" + str(video["title"]) + "' from '" + str(c["title"]) + "'...")
-                    # github.upload("subtitle.srt", f"{filename}.srt", repo)
-                    subtitle_url = f"https://unpkg.com/coursedio-{course_slug}@1.0.1/{i}.srt"
+                    subtitle_url = f"https://unpkg.com/{folder}@1.0.1/subtitle.srt"
                 except Exception as e:
                     print(f"[ ERROR ] {e}")
                     subtitle_url = None
                 
                 video["url"] = video_url
                 video["subtitle"] = subtitle_url
+                npm.publish(folder, folder)
             
-            npm.publish(course_slug, course_slug)
             GLOBAL_DATA.append(course)
             with open("progress_output.json", "w+") as f:
                 f.write(json.dumps(GLOBAL_DATA))
+                
+            input("The course '" + course["title"] + "' is done, press enter to continue...")
     
     with open("final_data.json", "w+") as f:
         f.write(json.dumps(GLOBAL_DATA))

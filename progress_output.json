@@ -1,1 +1,980 @@
-[]
+[
+    {
+        "author_name": "Doug Rose",
+        "author_url": "https://www.linkedin.com/in/dougrose",
+        "date_published": "Mar 15, 2023",
+        "description": "Get a simplified overview of the top tools in artificial intelligence.",
+        "image": "https://media.licdn.com/dms/image/C4D0DAQGqC3vTABOpmQ/learning-public-crop_675_1200/0/1678734020079?e=2147483647&v=beta&t=5BcMeTF_krpapU-uAx8kvOaL3_AbY_w4SsPUGcy_tKs",
+        "title": "Introduction to Artificial Intelligence",
+        "videos": [
+            {
+                "url": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-why-you-need-to-know-about-artificial-intelligence@1.0.1/video.mp4",
+                "duration": "49s",
+                "title": "Why you need to know about artificial intelligence",
+                "subtitle": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-why-you-need-to-know-about-artificial-intelligence@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-define-general-intelligence@1.0.1/video.mp4",
+                "duration": "3m 13s",
+                "title": "Define general intelligence",
+                "subtitle": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-define-general-intelligence@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-the-general-problem-solver@1.0.1/video.mp4",
+                "duration": "3m 7s",
+                "title": "The general problem-solver",
+                "subtitle": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-the-general-problem-solver@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-strong-vs-weak-ai@1.0.1/video.mp4",
+                "duration": "3m 1s",
+                "title": "Strong vs. weak AI",
+                "subtitle": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-strong-vs-weak-ai@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-machine-learning@1.0.1/video.mp4",
+                "duration": "3m 20s",
+                "title": "Machine learning",
+                "subtitle": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-machine-learning@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-artificial-neural-networks@1.0.1/video.mp4",
+                "duration": "3m 5s",
+                "title": "Artificial neural networks",
+                "subtitle": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-artificial-neural-networks@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-searching-for-patterns-in-data@1.0.1/video.mp4",
+                "duration": "3m 35s",
+                "title": "Searching for patterns in data",
+                "subtitle": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-searching-for-patterns-in-data@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-robotics@1.0.1/video.mp4",
+                "duration": "3m 19s",
+                "title": "Robotics",
+                "subtitle": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-robotics@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-natural-language-processing@1.0.1/video.mp4",
+                "duration": "3m 26s",
+                "title": "Natural language processing",
+                "subtitle": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-natural-language-processing@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-the-internet-of-things@1.0.1/video.mp4",
+                "duration": "3m 18s",
+                "title": "The Internet of Things",
+                "subtitle": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-the-internet-of-things@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-labeled-and-unlabeled-data@1.0.1/video.mp4",
+                "duration": "3m 7s",
+                "title": "Labeled and unlabeled data",
+                "subtitle": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-labeled-and-unlabeled-data@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-massive-datasets@1.0.1/video.mp4",
+                "duration": "3m 40s",
+                "title": "Massive datasets",
+                "subtitle": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-massive-datasets@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-classify-data@1.0.1/video.mp4",
+                "duration": "3m 22s",
+                "title": "Classify data",
+                "subtitle": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-classify-data@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-cluster-data@1.0.1/video.mp4",
+                "duration": "3m 24s",
+                "title": "Cluster data",
+                "subtitle": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-cluster-data@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-reinforcement-learning@1.0.1/video.mp4",
+                "duration": "3m 9s",
+                "title": "Reinforcement learning",
+                "subtitle": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-reinforcement-learning@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-common-algorithms@1.0.1/video.mp4",
+                "duration": "3m 19s",
+                "title": "Common algorithms",
+                "subtitle": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-common-algorithms@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-k-nearest-neighbor@1.0.1/video.mp4",
+                "duration": "3m 19s",
+                "title": "K-nearest neighbor",
+                "subtitle": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-k-nearest-neighbor@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-k-means-clustering@1.0.1/video.mp4",
+                "duration": "3m 31s",
+                "title": "K-means clustering",
+                "subtitle": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-k-means-clustering@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-regression@1.0.1/video.mp4",
+                "duration": "3m 25s",
+                "title": "Regression",
+                "subtitle": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-regression@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-naive-bayes@1.0.1/video.mp4",
+                "duration": "3m 29s",
+                "title": "Naive Bayes",
+                "subtitle": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-naive-bayes@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-select-the-best-algorithm@1.0.1/video.mp4",
+                "duration": "3m 21s",
+                "title": "Select the best algorithm",
+                "subtitle": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-select-the-best-algorithm@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-follow-the-data@1.0.1/video.mp4",
+                "duration": "3m 1s",
+                "title": "Follow the data",
+                "subtitle": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-follow-the-data@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-overfitting-and-underfitting@1.0.1/video.mp4",
+                "duration": "3m 19s",
+                "title": "Overfitting and underfitting",
+                "subtitle": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-overfitting-and-underfitting@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-build-a-neural-network@1.0.1/video.mp4",
+                "duration": "3m 22s",
+                "title": "Build a neural network",
+                "subtitle": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-build-a-neural-network@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-weighing-the-connections@1.0.1/video.mp4",
+                "duration": "3m 3s",
+                "title": "Weighing the connections",
+                "subtitle": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-weighing-the-connections@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-the-activation-bias@1.0.1/video.mp4",
+                "duration": "3m 2s",
+                "title": "The activation bias",
+                "subtitle": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-the-activation-bias@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-learning-from-mistakes@1.0.1/video.mp4",
+                "duration": "3m 23s",
+                "title": "Learning from mistakes",
+                "subtitle": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-learning-from-mistakes@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-step-through-the-network@1.0.1/video.mp4",
+                "duration": "3m 46s",
+                "title": "Step through the network",
+                "subtitle": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-step-through-the-network@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-using-ai-systems@1.0.1/video.mp4",
+                "duration": "3m 14s",
+                "title": "Using AI systems",
+                "subtitle": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-using-ai-systems@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-applying-ai-to-solve-problems@1.0.1/video.mp4",
+                "duration": "1m 22s",
+                "title": "Applying AI to solve problems",
+                "subtitle": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-applying-ai-to-solve-problems@1.0.1/subtitle.srt"
+            }
+        ],
+        "expire": 2147483647000,
+        "slug": "introduction-to-artificial-intelligence",
+        "excercise_file_url": "https://unpkg.com/coursedio-introduction-to-artificial-intelligence-excercise@1.0.1/exercise.zip",
+        "skills": [
+            "Artificial Intelligence for Business",
+            "Artificial Intelligence (AI)"
+        ],
+        "category": "business"
+    },
+    {
+        "author_name": "Anil Gupta",
+        "author_url": "https://www.linkedin.com/in/anil-gupta-strategy",
+        "date_published": "Mar 02, 2022",
+        "description": "Learn how deploying AI tools can boost your company\u2019s competitive advantage and help you leapfrog over your competition.",
+        "image": "https://media.licdn.com/dms/image/C4E0DAQGrKyRKPbnErQ/learning-public-crop_675_1200/0/1646242166320?e=2147483647&v=beta&t=bOlojxJ7BHcCmcPCxIYhrYhxcMDX5YpoeKtQ8NCbndk",
+        "title": "Artificial Intelligence and Business Strategy",
+        "videos": [
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-and-business-strategy-deploying-ai-for-your-competitive-advantage@1.0.1/video.mp4",
+                "duration": "1m 18s",
+                "title": "Deploying AI for your competitive advantage",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-and-business-strategy-deploying-ai-for-your-competitive-advantage@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-and-business-strategy-what-is-artificial-intelligence@1.0.1/video.mp4",
+                "duration": "5m 53s",
+                "title": "What is Artificial Intelligence?",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-and-business-strategy-what-is-artificial-intelligence@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-and-business-strategy-a-brief-history-of-ai-and-its-likely-future@1.0.1/video.mp4",
+                "duration": "5m 46s",
+                "title": "A brief history of AI and its likely future",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-and-business-strategy-a-brief-history-of-ai-and-its-likely-future@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-and-business-strategy-how-google-deploys-ai-to-create-user-value@1.0.1/video.mp4",
+                "duration": "5m 35s",
+                "title": "How Google deploys AI to create user value",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-and-business-strategy-how-google-deploys-ai-to-create-user-value@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-and-business-strategy-building-a-robust-data-pipeline@1.0.1/video.mp4",
+                "duration": "5m 18s",
+                "title": "Building a robust data pipeline",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-and-business-strategy-building-a-robust-data-pipeline@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-and-business-strategy-different-types-of-machine-learning-algorithms@1.0.1/video.mp4",
+                "duration": "5m 29s",
+                "title": "Different types of machine learning algorithms",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-and-business-strategy-different-types-of-machine-learning-algorithms@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-and-business-strategy-training-an-ai-model@1.0.1/video.mp4",
+                "duration": "5m 54s",
+                "title": "Training an AI model",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-and-business-strategy-training-an-ai-model@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-and-business-strategy-using-ai-for-deeper-market-research@1.0.1/video.mp4",
+                "duration": "4m 28s",
+                "title": "Using AI for deeper market research",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-and-business-strategy-using-ai-for-deeper-market-research@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-and-business-strategy-using-ai-for-hyper-market-segmentation@1.0.1/video.mp4",
+                "duration": "5m 32s",
+                "title": "Using AI for hyper market segmentation",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-and-business-strategy-using-ai-for-hyper-market-segmentation@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-and-business-strategy-using-ai-to-drive-product-innovation@1.0.1/video.mp4",
+                "duration": "5m 17s",
+                "title": "Using AI to drive product innovation",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-and-business-strategy-using-ai-to-drive-product-innovation@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-and-business-strategy-using-ai-for-managing-the-supply-chain-network@1.0.1/video.mp4",
+                "duration": "5m 32s",
+                "title": "Using AI for managing the supply chain network",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-and-business-strategy-using-ai-for-managing-the-supply-chain-network@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-and-business-strategy-using-ai-for-managing-internal-operations@1.0.1/video.mp4",
+                "duration": "5m 33s",
+                "title": "Using AI for managing internal operations",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-and-business-strategy-using-ai-for-managing-internal-operations@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-and-business-strategy-using-ai-for-human-resource-management@1.0.1/video.mp4",
+                "duration": "5m 53s",
+                "title": "Using AI for human resource management",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-and-business-strategy-using-ai-for-human-resource-management@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-and-business-strategy-decision-making-by-machines-moral-dilemmas@1.0.1/video.mp4",
+                "duration": "5m 14s",
+                "title": "Decision-Making by machines: Moral dilemmas",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-and-business-strategy-decision-making-by-machines-moral-dilemmas@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-and-business-strategy-guarding-against-the-risks-of-algorithmic-bias@1.0.1/video.mp4",
+                "duration": "5m 25s",
+                "title": "Guarding against the risks of algorithmic bias",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-and-business-strategy-guarding-against-the-risks-of-algorithmic-bias@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-and-business-strategy-mitigating-ai-s-possible-negative-impact-on-jobs@1.0.1/video.mp4",
+                "duration": "5m 34s",
+                "title": "Mitigating AI\u2019s possible negative impact on jobs",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-and-business-strategy-mitigating-ai-s-possible-negative-impact-on-jobs@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-and-business-strategy-from-ideas-to-actions@1.0.1/video.mp4",
+                "duration": "3m 7s",
+                "title": "From ideas to actions",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-and-business-strategy-from-ideas-to-actions@1.0.1/subtitle.srt"
+            }
+        ],
+        "expire": 2147483647000,
+        "slug": "artificial-intelligence-and-business-strategy",
+        "excercise_file_url": "https://unpkg.com/coursedio-artificial-intelligence-and-business-strategy-excercise@1.0.1/exercise.zip",
+        "skills": [
+            "Artificial Intelligence for Business",
+            "Business Strategy"
+        ],
+        "category": "business"
+    },
+    {
+        "author_name": "Ashley Herd",
+        "author_url": "https://www.linkedin.com/in/ashleyherd",
+        "date_published": "Apr 12, 2024",
+        "description": "Learn how to use cutting-edge generative AI tools to become a more successful, efficient, and effective manager.",
+        "image": "https://media.licdn.com/dms/image/D560DAQEudnED4s7pjA/learning-public-crop_675_1200/0/1712945780150?e=2147483647&v=beta&t=hic_5e_Du3aBKiaFMVaveE16d_ExbK93P1YzlxDgY9Q",
+        "title": "Become an AI-Powered Manager",
+        "videos": [
+            {
+                "url": "https://unpkg.com/coursedio-become-an-ai-powered-manager-manage-with-ai-anyone-can-do-it@1.0.1/video.mp4",
+                "duration": "50s",
+                "title": "Manage with AI\u2014anyone can do it",
+                "subtitle": "https://unpkg.com/coursedio-become-an-ai-powered-manager-manage-with-ai-anyone-can-do-it@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-become-an-ai-powered-manager-ai-will-make-you-efficient-not-extinct@1.0.1/video.mp4",
+                "duration": "4m 30s",
+                "title": "AI will make you efficient, not extinct",
+                "subtitle": "https://unpkg.com/coursedio-become-an-ai-powered-manager-ai-will-make-you-efficient-not-extinct@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-become-an-ai-powered-manager-get-comfortable-using-ai@1.0.1/video.mp4",
+                "duration": "1m 40s",
+                "title": "Get comfortable using AI",
+                "subtitle": "https://unpkg.com/coursedio-become-an-ai-powered-manager-get-comfortable-using-ai@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-become-an-ai-powered-manager-make-your-team-meetings-impactful-with-ai@1.0.1/video.mp4",
+                "duration": "3m 36s",
+                "title": "Make your team meetings impactful with AI",
+                "subtitle": "https://unpkg.com/coursedio-become-an-ai-powered-manager-make-your-team-meetings-impactful-with-ai@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-become-an-ai-powered-manager-use-ai-to-enhance-your-one-to-one-meetings@1.0.1/video.mp4",
+                "duration": "3m 5s",
+                "title": "Use AI to enhance your one-to-one meetings",
+                "subtitle": null
+            },
+            {
+                "url": "https://unpkg.com/coursedio-become-an-ai-powered-manager-use-ai-to-coach-and-give-better-feedback-to-your-team@1.0.1/video.mp4",
+                "duration": "3m 6s",
+                "title": "Use AI to coach and give better feedback to your team",
+                "subtitle": "https://unpkg.com/coursedio-become-an-ai-powered-manager-use-ai-to-coach-and-give-better-feedback-to-your-team@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-become-an-ai-powered-manager-practice-accepting-feedback-with-ai@1.0.1/video.mp4",
+                "duration": "2m 34s",
+                "title": "Practice accepting feedback with AI",
+                "subtitle": "https://unpkg.com/coursedio-become-an-ai-powered-manager-practice-accepting-feedback-with-ai@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-become-an-ai-powered-manager-create-training-and-development-opportunities-using-ai@1.0.1/video.mp4",
+                "duration": "3m 39s",
+                "title": "Create training and development opportunities using AI",
+                "subtitle": "https://unpkg.com/coursedio-become-an-ai-powered-manager-create-training-and-development-opportunities-using-ai@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-become-an-ai-powered-manager-delegate-to-your-team-with-confidence-with-the-help-of-ai@1.0.1/video.mp4",
+                "duration": "2m 31s",
+                "title": "Delegate to your team with confidence with the help of AI",
+                "subtitle": "https://unpkg.com/coursedio-become-an-ai-powered-manager-delegate-to-your-team-with-confidence-with-the-help-of-ai@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-become-an-ai-powered-manager-manage-conflict-like-a-leader-using-ai@1.0.1/video.mp4",
+                "duration": "3m 15s",
+                "title": "Manage conflict like a leader using AI",
+                "subtitle": "https://unpkg.com/coursedio-become-an-ai-powered-manager-manage-conflict-like-a-leader-using-ai@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-become-an-ai-powered-manager-leverage-ai-in-your-own-development@1.0.1/video.mp4",
+                "duration": "1m 53s",
+                "title": "Leverage AI in your own development",
+                "subtitle": "https://unpkg.com/coursedio-become-an-ai-powered-manager-leverage-ai-in-your-own-development@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-become-an-ai-powered-manager-identify-and-get-ahead-of-trends-using-ai@1.0.1/video.mp4",
+                "duration": "3m 32s",
+                "title": "Identify and get ahead of trends using AI",
+                "subtitle": "https://unpkg.com/coursedio-become-an-ai-powered-manager-identify-and-get-ahead-of-trends-using-ai@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-become-an-ai-powered-manager-leverage-ai-to-develop-cross-functional-knowledge@1.0.1/video.mp4",
+                "duration": "2m 27s",
+                "title": "Leverage AI to develop cross-functional knowledge",
+                "subtitle": "https://unpkg.com/coursedio-become-an-ai-powered-manager-leverage-ai-to-develop-cross-functional-knowledge@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-become-an-ai-powered-manager-use-ai-to-build-and-drive-strategy@1.0.1/video.mp4",
+                "duration": "2m 21s",
+                "title": "Use AI to build and drive strategy",
+                "subtitle": "https://unpkg.com/coursedio-become-an-ai-powered-manager-use-ai-to-build-and-drive-strategy@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-become-an-ai-powered-manager-how-ai-can-help-you-present-data-like-never-before@1.0.1/video.mp4",
+                "duration": "2m 36s",
+                "title": "How AI can help you present data like never before",
+                "subtitle": "https://unpkg.com/coursedio-become-an-ai-powered-manager-how-ai-can-help-you-present-data-like-never-before@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-become-an-ai-powered-manager-use-ai-to-support-internal-mobility@1.0.1/video.mp4",
+                "duration": "2m 17s",
+                "title": "Use AI to support internal mobility",
+                "subtitle": "https://unpkg.com/coursedio-become-an-ai-powered-manager-use-ai-to-support-internal-mobility@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-become-an-ai-powered-manager-apply-your-ai-powered-management-skills@1.0.1/video.mp4",
+                "duration": "1m 47s",
+                "title": "Apply your AI-powered management skills",
+                "subtitle": "https://unpkg.com/coursedio-become-an-ai-powered-manager-apply-your-ai-powered-management-skills@1.0.1/subtitle.srt"
+            }
+        ],
+        "expire": 2147483647000,
+        "slug": "become-an-ai-powered-manager",
+        "excercise_file_url": "https://unpkg.com/coursedio-become-an-ai-powered-manager-excercise@1.0.1/exercise.zip",
+        "skills": [
+            "Artificial Intelligence for Business",
+            "Management"
+        ],
+        "category": "business"
+    },
+    {
+        "author_name": "Dave Birss",
+        "author_url": "https://uk.linkedin.com/in/davebirss",
+        "date_published": "Jul 14, 2023",
+        "description": "Get a hands-on, practical run through of different ways to use generative artificial intelligence tools like ChatGPT to increase business productivity.",
+        "image": "https://media.licdn.com/dms/image/D560DAQEyqtbenL5uPg/learning-public-crop_675_1200/0/1689184260073?e=2147483647&v=beta&t=-ycvEHgX2JhIzS4VEmXCcc9Jz8wSTxD7bnY2wU1IpHw",
+        "title": "How to Boost Your Productivity with AI Tools",
+        "videos": [
+            {
+                "url": "https://unpkg.com/coursedio-how-to-boost-your-productivity-with-ai-tools-ai-is-a-dream-for-productivity@1.0.1/video.mp4",
+                "duration": "1m 18s",
+                "title": "AI is a dream for productivity",
+                "subtitle": "https://unpkg.com/coursedio-how-to-boost-your-productivity-with-ai-tools-ai-is-a-dream-for-productivity@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-how-to-boost-your-productivity-with-ai-tools-the-two-reasons-to-use-ai-in-business@1.0.1/video.mp4",
+                "duration": "2m 26s",
+                "title": "The two reasons to use AI in business",
+                "subtitle": "https://unpkg.com/coursedio-how-to-boost-your-productivity-with-ai-tools-the-two-reasons-to-use-ai-in-business@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-how-to-boost-your-productivity-with-ai-tools-identifying-opportunities-to-benefit-from-ai@1.0.1/video.mp4",
+                "duration": "2m 2s",
+                "title": "Identifying opportunities to benefit from AI",
+                "subtitle": "https://unpkg.com/coursedio-how-to-boost-your-productivity-with-ai-tools-identifying-opportunities-to-benefit-from-ai@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-how-to-boost-your-productivity-with-ai-tools-a-different-approach-to-ai-prompt-writing@1.0.1/video.mp4",
+                "duration": "3m 48s",
+                "title": "A different approach to AI prompt writing",
+                "subtitle": "https://unpkg.com/coursedio-how-to-boost-your-productivity-with-ai-tools-a-different-approach-to-ai-prompt-writing@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-how-to-boost-your-productivity-with-ai-tools-taking-responsibility-for-the-output-of-ai@1.0.1/video.mp4",
+                "duration": "2m 5s",
+                "title": "Taking responsibility for the output of AI",
+                "subtitle": "https://unpkg.com/coursedio-how-to-boost-your-productivity-with-ai-tools-taking-responsibility-for-the-output-of-ai@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-how-to-boost-your-productivity-with-ai-tools-organizing-your-ai-prompts@1.0.1/video.mp4",
+                "duration": "3m 5s",
+                "title": "Organizing your AI prompts",
+                "subtitle": "https://unpkg.com/coursedio-how-to-boost-your-productivity-with-ai-tools-organizing-your-ai-prompts@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-how-to-boost-your-productivity-with-ai-tools-using-ai-to-respond-to-an-email@1.0.1/video.mp4",
+                "duration": "6m 30s",
+                "title": "Using AI to respond to an email",
+                "subtitle": "https://unpkg.com/coursedio-how-to-boost-your-productivity-with-ai-tools-using-ai-to-respond-to-an-email@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-how-to-boost-your-productivity-with-ai-tools-using-ai-to-help-plan-a-project@1.0.1/video.mp4",
+                "duration": "5m 46s",
+                "title": "Using AI to help plan a project",
+                "subtitle": "https://unpkg.com/coursedio-how-to-boost-your-productivity-with-ai-tools-using-ai-to-help-plan-a-project@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-how-to-boost-your-productivity-with-ai-tools-using-ai-to-convert-text-to-html-markup@1.0.1/video.mp4",
+                "duration": "3m 54s",
+                "title": "Using AI to convert text to HTML markup",
+                "subtitle": "https://unpkg.com/coursedio-how-to-boost-your-productivity-with-ai-tools-using-ai-to-convert-text-to-html-markup@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-how-to-boost-your-productivity-with-ai-tools-using-ai-to-turn-a-document-into-a-presentation@1.0.1/video.mp4",
+                "duration": "5m 1s",
+                "title": "Using AI to turn a document into a presentation",
+                "subtitle": "https://unpkg.com/coursedio-how-to-boost-your-productivity-with-ai-tools-using-ai-to-turn-a-document-into-a-presentation@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-how-to-boost-your-productivity-with-ai-tools-using-ai-to-come-up-with-relevant-social-posts@1.0.1/video.mp4",
+                "duration": "4m 45s",
+                "title": "Using AI to come up with relevant social posts",
+                "subtitle": "https://unpkg.com/coursedio-how-to-boost-your-productivity-with-ai-tools-using-ai-to-come-up-with-relevant-social-posts@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-how-to-boost-your-productivity-with-ai-tools-using-ai-to-help-generate-ideas@1.0.1/video.mp4",
+                "duration": "6m 11s",
+                "title": "Using AI to help generate ideas",
+                "subtitle": "https://unpkg.com/coursedio-how-to-boost-your-productivity-with-ai-tools-using-ai-to-help-generate-ideas@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-how-to-boost-your-productivity-with-ai-tools-using-ai-to-start-a-mind-map@1.0.1/video.mp4",
+                "duration": "3m 6s",
+                "title": "Using AI to start a mind map",
+                "subtitle": "https://unpkg.com/coursedio-how-to-boost-your-productivity-with-ai-tools-using-ai-to-start-a-mind-map@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-how-to-boost-your-productivity-with-ai-tools-using-ai-to-improve-your-arguments@1.0.1/video.mp4",
+                "duration": "2m 54s",
+                "title": "Using AI to improve your arguments",
+                "subtitle": "https://unpkg.com/coursedio-how-to-boost-your-productivity-with-ai-tools-using-ai-to-improve-your-arguments@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-how-to-boost-your-productivity-with-ai-tools-using-ai-to-challenge-conventional-thinking@1.0.1/video.mp4",
+                "duration": "2m 27s",
+                "title": "Using AI to challenge conventional thinking",
+                "subtitle": "https://unpkg.com/coursedio-how-to-boost-your-productivity-with-ai-tools-using-ai-to-challenge-conventional-thinking@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-how-to-boost-your-productivity-with-ai-tools-using-ai-to-help-you-present-ideas-to-decision-makers@1.0.1/video.mp4",
+                "duration": "3m 49s",
+                "title": "Using AI to help you present ideas to decision makers",
+                "subtitle": "https://unpkg.com/coursedio-how-to-boost-your-productivity-with-ai-tools-using-ai-to-help-you-present-ideas-to-decision-makers@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-how-to-boost-your-productivity-with-ai-tools-summary-and-next-steps@1.0.1/video.mp4",
+                "duration": "1m 5s",
+                "title": "Summary and next steps",
+                "subtitle": "https://unpkg.com/coursedio-how-to-boost-your-productivity-with-ai-tools-summary-and-next-steps@1.0.1/subtitle.srt"
+            }
+        ],
+        "expire": 2147483647000,
+        "slug": "how-to-boost-your-productivity-with-ai-tools",
+        "excercise_file_url": null,
+        "skills": [
+            "Artificial Intelligence for Business",
+            "Productivity Improvement"
+        ],
+        "category": "business"
+    },
+    {
+        "author_name": "Tomer Cohen",
+        "author_url": "https://www.linkedin.com/in/tomercohen",
+        "date_published": "Mar 15, 2023",
+        "description": "Learn about the key issues and implications that global business leaders need to consider about generative artificial intelligence as they lead their companies into the future.",
+        "image": "https://media.licdn.com/dms/image/C4D0DAQHsCAbXLw-NOw/learning-public-crop_675_1200/0/1678753390059?e=2147483647&v=beta&t=A5K13y6-XmKs1lU26nHi0CX7Qq5hQTQMNG6p3RDwfpQ",
+        "title": "Generative AI for Business Leaders",
+        "videos": [
+            {
+                "url": "https://unpkg.com/coursedio-generative-ai-for-business-leaders-generative-ai-for-business-leaders@1.0.1/video.mp4",
+                "duration": "1m 40s",
+                "title": "Generative AI for business leaders",
+                "subtitle": "https://unpkg.com/coursedio-generative-ai-for-business-leaders-generative-ai-for-business-leaders@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-generative-ai-for-business-leaders-generative-ai-use-cases@1.0.1/video.mp4",
+                "duration": "3m 15s",
+                "title": "Generative AI use cases",
+                "subtitle": "https://unpkg.com/coursedio-generative-ai-for-business-leaders-generative-ai-use-cases@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-generative-ai-for-business-leaders-what-is-generative-ai@1.0.1/video.mp4",
+                "duration": "3m 36s",
+                "title": "What is generative AI?",
+                "subtitle": "https://unpkg.com/coursedio-generative-ai-for-business-leaders-what-is-generative-ai@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-generative-ai-for-business-leaders-algorithm-objective@1.0.1/video.mp4",
+                "duration": "2m 27s",
+                "title": "Algorithm objective",
+                "subtitle": "https://unpkg.com/coursedio-generative-ai-for-business-leaders-algorithm-objective@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-generative-ai-for-business-leaders-data-is-fuel-for-ai@1.0.1/video.mp4",
+                "duration": "3m 23s",
+                "title": "Data is fuel for AI",
+                "subtitle": "https://unpkg.com/coursedio-generative-ai-for-business-leaders-data-is-fuel-for-ai@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-generative-ai-for-business-leaders-ai-model@1.0.1/video.mp4",
+                "duration": "4m 46s",
+                "title": "AI model",
+                "subtitle": "https://unpkg.com/coursedio-generative-ai-for-business-leaders-ai-model@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-generative-ai-for-business-leaders-prompt-engineering@1.0.1/video.mp4",
+                "duration": "4m 41s",
+                "title": "Prompt engineering",
+                "subtitle": "https://unpkg.com/coursedio-generative-ai-for-business-leaders-prompt-engineering@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-generative-ai-for-business-leaders-what-processes-and-products-can-be-transformed-by-ai@1.0.1/video.mp4",
+                "duration": "3m 30s",
+                "title": "What processes and products can be transformed by AI?",
+                "subtitle": "https://unpkg.com/coursedio-generative-ai-for-business-leaders-what-processes-and-products-can-be-transformed-by-ai@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-generative-ai-for-business-leaders-how-might-generative-ai-impact-various-industries@1.0.1/video.mp4",
+                "duration": "3m 56s",
+                "title": "How might generative AI impact various industries?",
+                "subtitle": "https://unpkg.com/coursedio-generative-ai-for-business-leaders-how-might-generative-ai-impact-various-industries@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-generative-ai-for-business-leaders-how-to-assess-your-company-s-needs@1.0.1/video.mp4",
+                "duration": "3m 50s",
+                "title": "How to assess your company's needs",
+                "subtitle": "https://unpkg.com/coursedio-generative-ai-for-business-leaders-how-to-assess-your-company-s-needs@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-generative-ai-for-business-leaders-identify-and-select-the-data-and-ai-systems@1.0.1/video.mp4",
+                "duration": "3m 33s",
+                "title": "Identify and select the data and AI systems",
+                "subtitle": "https://unpkg.com/coursedio-generative-ai-for-business-leaders-identify-and-select-the-data-and-ai-systems@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-generative-ai-for-business-leaders-finding-the-best-partner-or-vendor@1.0.1/video.mp4",
+                "duration": "1m 22s",
+                "title": "Finding the best partner or vendor",
+                "subtitle": "https://unpkg.com/coursedio-generative-ai-for-business-leaders-finding-the-best-partner-or-vendor@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-generative-ai-for-business-leaders-preparing-your-team@1.0.1/video.mp4",
+                "duration": "1m 50s",
+                "title": "Preparing your team",
+                "subtitle": "https://unpkg.com/coursedio-generative-ai-for-business-leaders-preparing-your-team@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-generative-ai-for-business-leaders-key-pitfalls-and-limitations@1.0.1/video.mp4",
+                "duration": "5m 32s",
+                "title": "Key pitfalls and limitations",
+                "subtitle": "https://unpkg.com/coursedio-generative-ai-for-business-leaders-key-pitfalls-and-limitations@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-generative-ai-for-business-leaders-ensuring-ethics-and-data-privacy@1.0.1/video.mp4",
+                "duration": "3m 38s",
+                "title": "Ensuring ethics and data privacy",
+                "subtitle": "https://unpkg.com/coursedio-generative-ai-for-business-leaders-ensuring-ethics-and-data-privacy@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-generative-ai-for-business-leaders-how-generative-ai-is-likely-to-evolve@1.0.1/video.mp4",
+                "duration": "2m 42s",
+                "title": "How generative AI is likely to evolve",
+                "subtitle": "https://unpkg.com/coursedio-generative-ai-for-business-leaders-how-generative-ai-is-likely-to-evolve@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-generative-ai-for-business-leaders-society-and-the-next-frontier@1.0.1/video.mp4",
+                "duration": "2m 15s",
+                "title": "Society and the next frontier",
+                "subtitle": "https://unpkg.com/coursedio-generative-ai-for-business-leaders-society-and-the-next-frontier@1.0.1/subtitle.srt"
+            }
+        ],
+        "expire": 2147483647000,
+        "slug": "generative-ai-for-business-leaders",
+        "excercise_file_url": "https://unpkg.com/coursedio-generative-ai-for-business-leaders-excercise@1.0.1/exercise.zip",
+        "skills": [
+            "Artificial Intelligence for Business",
+            "Business Strategy"
+        ],
+        "category": "business"
+    },
+    {
+        "author_name": "Chris McKay",
+        "author_url": "https://www.linkedin.com/in/mckay-chris",
+        "date_published": "Jan 10, 2024",
+        "description": "Learn from this comprehensive guide for decision makers to strategically understand, integrate, and scale generative AI within your businesses.",
+        "image": "https://media.licdn.com/dms/image/D560DAQEcOVJOBn2aMA/learning-public-crop_675_1200/0/1704764400565?e=2147483647&v=beta&t=p0bE821kUGQJHQDv1b1HCwpD4P1QecwaB01Txx_J-Sc",
+        "title": "Integrating Generative AI into Business Strategy",
+        "videos": [
+            {
+                "url": "https://unpkg.com/coursedio-integrating-generative-ai-into-business-strategy-why-a-strategic-framework-is-essential-for-ai-adoption@1.0.1/video.mp4",
+                "duration": "50s",
+                "title": "Why a strategic framework is essential for AI adoption",
+                "subtitle": "https://unpkg.com/coursedio-integrating-generative-ai-into-business-strategy-why-a-strategic-framework-is-essential-for-ai-adoption@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-integrating-generative-ai-into-business-strategy-the-usage-framework-a-pragmatic-approach-to-ai-adoption@1.0.1/video.mp4",
+                "duration": "2m 3s",
+                "title": "The USAGE framework: A pragmatic approach to AI adoption",
+                "subtitle": "https://unpkg.com/coursedio-integrating-generative-ai-into-business-strategy-the-usage-framework-a-pragmatic-approach-to-ai-adoption@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-integrating-generative-ai-into-business-strategy-invest-in-ai-literacy-to-gain-competitive-advantage@1.0.1/video.mp4",
+                "duration": "3m 56s",
+                "title": "Invest in AI literacy to gain competitive advantage",
+                "subtitle": "https://unpkg.com/coursedio-integrating-generative-ai-into-business-strategy-invest-in-ai-literacy-to-gain-competitive-advantage@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-integrating-generative-ai-into-business-strategy-identify-use-cases-and-ground-ai-in-real-business-needs@1.0.1/video.mp4",
+                "duration": "3m 23s",
+                "title": "Identify use-cases and ground AI in real business needs",
+                "subtitle": "https://unpkg.com/coursedio-integrating-generative-ai-into-business-strategy-identify-use-cases-and-ground-ai-in-real-business-needs@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-integrating-generative-ai-into-business-strategy-define-ai-technical-requirements@1.0.1/video.mp4",
+                "duration": "3m 12s",
+                "title": "Define AI technical requirements",
+                "subtitle": "https://unpkg.com/coursedio-integrating-generative-ai-into-business-strategy-define-ai-technical-requirements@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-integrating-generative-ai-into-business-strategy-perform-an-ai-skills-gap-analysis-and-talent-audit@1.0.1/video.mp4",
+                "duration": "2m 55s",
+                "title": "Perform an AI skills gap analysis and talent audit",
+                "subtitle": "https://unpkg.com/coursedio-integrating-generative-ai-into-business-strategy-perform-an-ai-skills-gap-analysis-and-talent-audit@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-integrating-generative-ai-into-business-strategy-reduce-blindspots-by-conducting-an-ai-risk-analysis@1.0.1/video.mp4",
+                "duration": "3m 28s",
+                "title": "Reduce blindspots by conducting an AI risk analysis",
+                "subtitle": "https://unpkg.com/coursedio-integrating-generative-ai-into-business-strategy-reduce-blindspots-by-conducting-an-ai-risk-analysis@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-integrating-generative-ai-into-business-strategy-develop-an-ai-roadmap-and-tie-goals-to-business-value@1.0.1/video.mp4",
+                "duration": "2m 54s",
+                "title": "Develop an AI roadmap and tie goals to business value",
+                "subtitle": "https://unpkg.com/coursedio-integrating-generative-ai-into-business-strategy-develop-an-ai-roadmap-and-tie-goals-to-business-value@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-integrating-generative-ai-into-business-strategy-the-importance-of-structuring-ai-leadership-and-ownership@1.0.1/video.mp4",
+                "duration": "2m 28s",
+                "title": "The importance of structuring AI leadership and ownership",
+                "subtitle": "https://unpkg.com/coursedio-integrating-generative-ai-into-business-strategy-the-importance-of-structuring-ai-leadership-and-ownership@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-integrating-generative-ai-into-business-strategy-how-to-operationalize-your-ai-strategy@1.0.1/video.mp4",
+                "duration": "3m 8s",
+                "title": "How to operationalize your AI strategy",
+                "subtitle": "https://unpkg.com/coursedio-integrating-generative-ai-into-business-strategy-how-to-operationalize-your-ai-strategy@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-integrating-generative-ai-into-business-strategy-responsible-ai-deployment@1.0.1/video.mp4",
+                "duration": "2m 46s",
+                "title": "Responsible AI deployment",
+                "subtitle": "https://unpkg.com/coursedio-integrating-generative-ai-into-business-strategy-responsible-ai-deployment@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-integrating-generative-ai-into-business-strategy-assess-generative-ai-outcomes-to-measure-roi@1.0.1/video.mp4",
+                "duration": "2m 29s",
+                "title": "Assess generative AI outcomes to measure ROI",
+                "subtitle": "https://unpkg.com/coursedio-integrating-generative-ai-into-business-strategy-assess-generative-ai-outcomes-to-measure-roi@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-integrating-generative-ai-into-business-strategy-adapt-the-usage-framework-to-your-needs@1.0.1/video.mp4",
+                "duration": "2m 22s",
+                "title": "Adapt the USAGE framework to your needs",
+                "subtitle": "https://unpkg.com/coursedio-integrating-generative-ai-into-business-strategy-adapt-the-usage-framework-to-your-needs@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-integrating-generative-ai-into-business-strategy-continue-learning@1.0.1/video.mp4",
+                "duration": "39s",
+                "title": "Continue learning",
+                "subtitle": "https://unpkg.com/coursedio-integrating-generative-ai-into-business-strategy-continue-learning@1.0.1/subtitle.srt"
+            }
+        ],
+        "expire": 2147483647000,
+        "slug": "integrating-generative-ai-into-business-strategy",
+        "excercise_file_url": null,
+        "skills": [
+            "Artificial Intelligence for Business",
+            "Business Strategy"
+        ],
+        "category": "business"
+    },
+    {
+        "author_name": "Doug Rose",
+        "author_url": "https://www.linkedin.com/in/dougrose",
+        "date_published": "Sep 16, 2020",
+        "description": "Explore the artificial intelligence tools and concepts that can solve some of today's most pressing business needs: logistics, customer support, inventory prediction, and more.",
+        "image": "https://media.licdn.com/dms/image/C4D0DAQGsbRBjnUN0pA/learning-public-crop_675_1200/0/1600116839130?e=2147483647&v=beta&t=qe6RZMUYfkTZ8znDq71ASsH6VCGb-QkQJwB2qYBlixg",
+        "title": "Artificial Intelligence for Business Leaders",
+        "videos": [
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-welcome-to-the-course@1.0.1/video.mp4",
+                "duration": "1m 25s",
+                "title": "Welcome to the course",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-welcome-to-the-course@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-natural-language-processing-nlp@1.0.1/video.mp4",
+                "duration": "3m 30s",
+                "title": "Natural language processing (NLP)",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-natural-language-processing-nlp@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-generate-natural-sounding-text-nlg@1.0.1/video.mp4",
+                "duration": "3m 22s",
+                "title": "Generate natural sounding text (NLG)",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-generate-natural-sounding-text-nlg@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-understand-text-and-speech-nlu@1.0.1/video.mp4",
+                "duration": "3m 9s",
+                "title": "Understand text and speech (NLU)",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-understand-text-and-speech-nlu@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-responsive-automated-customer-service@1.0.1/video.mp4",
+                "duration": "3m 2s",
+                "title": "Responsive automated customer service",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-responsive-automated-customer-service@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-review-the-top-nlp-tools@1.0.1/video.mp4",
+                "duration": "3m 53s",
+                "title": "Review the top NLP tools",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-review-the-top-nlp-tools@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-review-the-top-nlg-tools@1.0.1/video.mp4",
+                "duration": "3m 1s",
+                "title": "Review the top NLG tools",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-review-the-top-nlg-tools@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-automated-speech-recognition@1.0.1/video.mp4",
+                "duration": "3m 3s",
+                "title": "Automated speech recognition",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-automated-speech-recognition@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-respond-with-ai-virtual-agents@1.0.1/video.mp4",
+                "duration": "3m 11s",
+                "title": "Respond with AI virtual agents",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-respond-with-ai-virtual-agents@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-review-the-top-virtual-agent-tools@1.0.1/video.mp4",
+                "duration": "3m 23s",
+                "title": "Review the top virtual agent tools",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-review-the-top-virtual-agent-tools@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-ai-automated-decision-making@1.0.1/video.mp4",
+                "duration": "2m 53s",
+                "title": "AI automated decision-making",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-ai-automated-decision-making@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-benefit-from-next-level-logistics@1.0.1/video.mp4",
+                "duration": "2m 45s",
+                "title": "Benefit from next-level logistics",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-benefit-from-next-level-logistics@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-manage-and-monitor-with-iot-devices@1.0.1/video.mp4",
+                "duration": "3m 11s",
+                "title": "Manage and monitor with IoT devices",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-manage-and-monitor-with-iot-devices@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-talk-with-your-customer@1.0.1/video.mp4",
+                "duration": "2m 59s",
+                "title": "Talk with your customer",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-talk-with-your-customer@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-build-machine-learning-platforms@1.0.1/video.mp4",
+                "duration": "3m 19s",
+                "title": "Build machine learning platforms",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-build-machine-learning-platforms@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-it-s-really-about-labeling-data@1.0.1/video.mp4",
+                "duration": "3m 14s",
+                "title": "It's really about labeling data",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-it-s-really-about-labeling-data@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-guess-what-customers-will-buy@1.0.1/video.mp4",
+                "duration": "2m 59s",
+                "title": "Guess what customers will buy",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-guess-what-customers-will-buy@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-answer-questions-before-they-re-asked@1.0.1/video.mp4",
+                "duration": "3m 23s",
+                "title": "Answer questions before they're asked",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-answer-questions-before-they-re-asked@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-make-decisions-before-your-competitors@1.0.1/video.mp4",
+                "duration": "3m 7s",
+                "title": "Make decisions before your competitors",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-make-decisions-before-your-competitors@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-build-systems-with-expertise@1.0.1/video.mp4",
+                "duration": "2m 59s",
+                "title": "Build systems with expertise",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-build-systems-with-expertise@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-don-t-be-evil@1.0.1/video.mp4",
+                "duration": "3m 5s",
+                "title": "Don't be evil",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-don-t-be-evil@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-review-the-top-machine-learning-tools@1.0.1/video.mp4",
+                "duration": "3m 45s",
+                "title": "Review the top machine learning tools",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-review-the-top-machine-learning-tools@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-build-a-neural-network@1.0.1/video.mp4",
+                "duration": "3m 14s",
+                "title": "Build a neural network",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-build-a-neural-network@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-add-layers-for-deep-learning@1.0.1/video.mp4",
+                "duration": "2m 59s",
+                "title": "Add layers for deep learning",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-add-layers-for-deep-learning@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-you-can-classify-your-best-customers@1.0.1/video.mp4",
+                "duration": "3m 25s",
+                "title": "You can classify your best customers",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-you-can-classify-your-best-customers@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-how-to-cluster-together-purchases@1.0.1/video.mp4",
+                "duration": "3m 3s",
+                "title": "How to cluster together purchases",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-how-to-cluster-together-purchases@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-review-the-top-deep-learning-tools@1.0.1/video.mp4",
+                "duration": "4m 12s",
+                "title": "Review the top deep learning tools",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-review-the-top-deep-learning-tools@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-check-body-language-with-biometrics@1.0.1/video.mp4",
+                "duration": "3m 7s",
+                "title": "Check body language with biometrics",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-check-body-language-with-biometrics@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-what-s-automated-or-intelligent@1.0.1/video.mp4",
+                "duration": "3m 37s",
+                "title": "What's automated or \"intelligent\"?",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-what-s-automated-or-intelligent@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-next-steps@1.0.1/video.mp4",
+                "duration": "1m 22s",
+                "title": "Next steps",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-business-leaders-next-steps@1.0.1/subtitle.srt"
+            }
+        ],
+        "expire": 2147483647000,
+        "slug": "artificial-intelligence-for-business-leaders",
+        "excercise_file_url": null,
+        "skills": [
+            "Artificial Intelligence for Business",
+            "Artificial Intelligence (AI)"
+        ],
+        "category": "business"
+    }
+]

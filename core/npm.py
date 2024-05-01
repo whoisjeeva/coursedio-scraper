@@ -17,12 +17,13 @@ class Npm:
     def publish(self, slug, path):
         os.chdir(path)
         with open("package.json", "w") as f:
-            f.write(self.package_string.replace("__NAME__", "coursedio-" + slug))
+            f.write(self.package_string.replace("__NAME__", slug))
         
         with open("index.js", "w") as f:
             f.write("console.log('coursedio');")
             
         os.system("npm publish")
+        os.chdir("..")
         
 
 if __name__ == "__main__":
