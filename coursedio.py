@@ -8,6 +8,7 @@ from core.scraper import Scraper
 
 
 GLOBAL_DATA = []
+GLOBAL_SLUGS = []
 
 
 def main():
@@ -26,6 +27,7 @@ def main():
                 is_downloaded = False
                 break
         if is_downloaded:
+            GLOBAL_SLUGS.append(d["slug"])
             GLOBAL_DATA.append(d)
     
     github = Github()
@@ -36,6 +38,9 @@ def main():
     for d in data:
         category = d["category"]
         for c in d["courses"]:
+            if c["slug"] in GLOBAL_SLUGS:
+                print("[ STATUS ] Skipping course details for '" + str(c["title"]) + "'...")
+                continue
             print("[ STATUS ] Getting course details for '" + str(c["title"]) + "'...")
             course, _ = scraper.get_course_details_using_session(c["slug"])
             course_slug = course["slug"]
@@ -43,11 +48,20 @@ def main():
             excercise_files = scraper.get_exercise_files(course_slug)
             if len(excercise_files) > 0:
                 course["excercise_file_url"] = excercise_files[0]["url"]
+            else:
+                course["excercise_file_url"] = None
             course["skills"] = c["skills"]
             course["category"] = category
             
+            repo_name = uuid.uuid4().hex
+            if course["excercise_file_url"] is not None:
+                download_file(scraper.session, course["excercise_file_url"], "ex.zip")
+                print("[ STATUS ] Uploading excercise files for '" + str(course["title"]) + "'...")
+                github.upload("ex.zip", f"{repo_name}.mp4", repo)
+                video_url = f"https://cdn.jsdelivr.net/gh/coursedio/{repo}/{repo_name}.zip"
+            
             print("[ STATUS ] Creating repo for course '" + str(c["title"]) + "'...")
-            repo = github.create_repo(uuid.uuid4().hex)
+            repo = github.create_repo(repo_name)
 
             for video in course["videos"]:
                 if os.path.exists("v.mp4"):
@@ -118,6 +132,7 @@ def get_high_quality_video(streams):
 if __name__ == "__main__":
     try:
         main()
-    except:
+    except Exception as e:
         with open("progress_output.json", "w+") as f:
             f.write(json.dumps(GLOBAL_DATA))
+        raise e

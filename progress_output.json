@@ -1,0 +1,320 @@
+[
+    {
+        "author_name": "Doug Rose",
+        "author_url": "https://www.linkedin.com/in/dougrose",
+        "date_published": "Mar 15, 2023",
+        "description": "Get a simplified overview of the top tools in artificial intelligence.",
+        "image": "https://media.licdn.com/dms/image/C4D0DAQGqC3vTABOpmQ/learning-public-crop_675_1200/0/1678734020079?e=2147483647&v=beta&t=5BcMeTF_krpapU-uAx8kvOaL3_AbY_w4SsPUGcy_tKs",
+        "title": "Introduction to Artificial Intelligence",
+        "videos": [
+            {
+                "url": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/8741dc18deaa420b86833b99f372f74c.mp4",
+                "duration": "49s",
+                "title": "Why you need to know about artificial intelligence",
+                "subtitle": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/8741dc18deaa420b86833b99f372f74c.srt"
+            },
+            {
+                "url": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/e7911f65169d4097bef3629a1c281373.mp4",
+                "duration": "3m 13s",
+                "title": "Define general intelligence",
+                "subtitle": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/e7911f65169d4097bef3629a1c281373.srt"
+            },
+            {
+                "url": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/b169766b8f5749169af153890bf5acf9.mp4",
+                "duration": "3m 7s",
+                "title": "The general problem-solver",
+                "subtitle": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/b169766b8f5749169af153890bf5acf9.srt"
+            },
+            {
+                "url": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/42c92fcf25964af9bef2cdea30b356a3.mp4",
+                "duration": "3m 1s",
+                "title": "Strong vs. weak AI",
+                "subtitle": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/42c92fcf25964af9bef2cdea30b356a3.srt"
+            },
+            {
+                "url": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/6677349ce1cf499da33b52d71cb23685.mp4",
+                "duration": "3m 20s",
+                "title": "Machine learning",
+                "subtitle": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/6677349ce1cf499da33b52d71cb23685.srt"
+            },
+            {
+                "url": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/da3db877cacd4118b76d6d71f8ea9135.mp4",
+                "duration": "3m 5s",
+                "title": "Artificial neural networks",
+                "subtitle": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/da3db877cacd4118b76d6d71f8ea9135.srt"
+            },
+            {
+                "url": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/28ab4043753c499998c0fbd1d4e0f28a.mp4",
+                "duration": "3m 35s",
+                "title": "Searching for patterns in data",
+                "subtitle": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/28ab4043753c499998c0fbd1d4e0f28a.srt"
+            },
+            {
+                "url": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/9e2cdfb2eccc4cddaec9634868fd7216.mp4",
+                "duration": "3m 19s",
+                "title": "Robotics",
+                "subtitle": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/9e2cdfb2eccc4cddaec9634868fd7216.srt"
+            },
+            {
+                "url": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/0a39593fdceb48b8aa37e920fca99b5d.mp4",
+                "duration": "3m 26s",
+                "title": "Natural language processing",
+                "subtitle": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/0a39593fdceb48b8aa37e920fca99b5d.srt"
+            },
+            {
+                "url": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/70b02510ba564a9f8ec9ec8fc1fdfcfc.mp4",
+                "duration": "3m 18s",
+                "title": "The Internet of Things",
+                "subtitle": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/70b02510ba564a9f8ec9ec8fc1fdfcfc.srt"
+            },
+            {
+                "url": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/8a60d7fe388c4b53bef8cd99d87e3450.mp4",
+                "duration": "3m 7s",
+                "title": "Labeled and unlabeled data",
+                "subtitle": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/8a60d7fe388c4b53bef8cd99d87e3450.srt"
+            },
+            {
+                "url": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/1fa1091dae0c4e14aba28b12d45236a1.mp4",
+                "duration": "3m 40s",
+                "title": "Massive datasets",
+                "subtitle": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/1fa1091dae0c4e14aba28b12d45236a1.srt"
+            },
+            {
+                "url": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/0e77b57c949545ce96c896a28781cd21.mp4",
+                "duration": "3m 22s",
+                "title": "Classify data",
+                "subtitle": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/0e77b57c949545ce96c896a28781cd21.srt"
+            },
+            {
+                "url": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/f9c8fdc7b9b44f2ba175eec7c4db8e47.mp4",
+                "duration": "3m 24s",
+                "title": "Cluster data",
+                "subtitle": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/f9c8fdc7b9b44f2ba175eec7c4db8e47.srt"
+            },
+            {
+                "url": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/1af0e57fc785441abd4069866e83631d.mp4",
+                "duration": "3m 9s",
+                "title": "Reinforcement learning",
+                "subtitle": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/1af0e57fc785441abd4069866e83631d.srt"
+            },
+            {
+                "url": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/e079136161004ee79bf82e1dac946c0f.mp4",
+                "duration": "3m 19s",
+                "title": "Common algorithms",
+                "subtitle": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/e079136161004ee79bf82e1dac946c0f.srt"
+            },
+            {
+                "url": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/35bd9255b9ea4f89896b16ab0dab6577.mp4",
+                "duration": "3m 19s",
+                "title": "K-nearest neighbor",
+                "subtitle": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/35bd9255b9ea4f89896b16ab0dab6577.srt"
+            },
+            {
+                "url": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/2bba1ec6fec64e91b518ad6712787506.mp4",
+                "duration": "3m 31s",
+                "title": "K-means clustering",
+                "subtitle": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/2bba1ec6fec64e91b518ad6712787506.srt"
+            },
+            {
+                "url": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/8288b7e6505848be80dee3903265386e.mp4",
+                "duration": "3m 25s",
+                "title": "Regression",
+                "subtitle": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/8288b7e6505848be80dee3903265386e.srt"
+            },
+            {
+                "url": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/d28a7e5fe31042cf98f9d54e58f619b9.mp4",
+                "duration": "3m 29s",
+                "title": "Naive Bayes",
+                "subtitle": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/d28a7e5fe31042cf98f9d54e58f619b9.srt"
+            },
+            {
+                "url": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/259d4d1f5bd245498377ae6015192b4b.mp4",
+                "duration": "3m 21s",
+                "title": "Select the best algorithm",
+                "subtitle": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/259d4d1f5bd245498377ae6015192b4b.srt"
+            },
+            {
+                "url": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/690fb7c93ccd41d78efd538876c11b03.mp4",
+                "duration": "3m 1s",
+                "title": "Follow the data",
+                "subtitle": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/690fb7c93ccd41d78efd538876c11b03.srt"
+            },
+            {
+                "url": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/573756a48a234b7e9b731c1a0ea699eb.mp4",
+                "duration": "3m 19s",
+                "title": "Overfitting and underfitting",
+                "subtitle": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/573756a48a234b7e9b731c1a0ea699eb.srt"
+            },
+            {
+                "url": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/7c80d885853843de82ed87200dfecb2d.mp4",
+                "duration": "3m 22s",
+                "title": "Build a neural network",
+                "subtitle": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/7c80d885853843de82ed87200dfecb2d.srt"
+            },
+            {
+                "url": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/e0a17181d0e4467a91c94421ad50ea70.mp4",
+                "duration": "3m 3s",
+                "title": "Weighing the connections",
+                "subtitle": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/e0a17181d0e4467a91c94421ad50ea70.srt"
+            },
+            {
+                "url": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/531b62207dc04335995dc5a263ddb529.mp4",
+                "duration": "3m 2s",
+                "title": "The activation bias",
+                "subtitle": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/531b62207dc04335995dc5a263ddb529.srt"
+            },
+            {
+                "url": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/07cf78dd91f94bb087ac122dde66fc22.mp4",
+                "duration": "3m 23s",
+                "title": "Learning from mistakes",
+                "subtitle": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/07cf78dd91f94bb087ac122dde66fc22.srt"
+            },
+            {
+                "url": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/3795ecff756845299224a7f5eb0098c0.mp4",
+                "duration": "3m 46s",
+                "title": "Step through the network",
+                "subtitle": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/3795ecff756845299224a7f5eb0098c0.srt"
+            },
+            {
+                "url": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/4af26879a3a84788abe522b09ad9d454.mp4",
+                "duration": "3m 14s",
+                "title": "Using AI systems",
+                "subtitle": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/4af26879a3a84788abe522b09ad9d454.srt"
+            },
+            {
+                "url": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/70eea3cbd0174b6287a4f98de7959f2c.mp4",
+                "duration": "1m 22s",
+                "title": "Applying AI to solve problems",
+                "subtitle": "https://cdn.jsdelivr.net/gh/coursedio/1396f501794d445d8c9df0028e4edf43/70eea3cbd0174b6287a4f98de7959f2c.srt"
+            }
+        ],
+        "expire": 2147483647000,
+        "slug": "introduction-to-artificial-intelligence",
+        "excercise_file_url": "https://www.linkedin.com/ambry/?x-li-ambry-ep=AQJ3WSk7jD2xNwAAAY8xpO6hXydtdqPNLQ7pLlM76F3Cl5OpHsXW2Kb6k1NRxFccTGIMTqnOwl1EkCzWuHrSSJy2dp2HeAZucGcAngpxdik-en_iK_0VoR-gfr8sx3IVI2KBBufA4TBqm5bLjymVvIIz-MNMxPJNANH1kDFXXbrqihexyodQnOBCzMfVj82sVFK0KEFJ-XT2tntlThLDNtvZt0DP_6NXvBs2Zi5VtzoycQ7gpfE1VWDQjGK2n63Lwb3gn52zpetYeKZM1eQOPIM9UXqY1RWbfAasv6fAcIIUwJan2U83d-vi3akI1D-IIfNEvScuXXZmvntnJYSu_UjNUhuIisYNcifKgPb8ZZ7ngwqitZVbVT0x6_vBSzlASdAWFSnUEPozeerDy3rm2V7rt2r2UZjugT5c_VlXjHPHNd-q8WQG1_uzTQJJh_nmxnualUGkPaScQzkeZG76MngzMWAhEUWZ1UUQTOWhSr5S1UG5Uet-xyQukxK5",
+        "skills": [
+            "Artificial Intelligence for Business",
+            "Artificial Intelligence (AI)"
+        ],
+        "category": "business"
+    },
+    {
+        "author_name": "Anil Gupta",
+        "author_url": "https://www.linkedin.com/in/anil-gupta-strategy",
+        "date_published": "Mar 02, 2022",
+        "description": "Learn how deploying AI tools can boost your company\u2019s competitive advantage and help you leapfrog over your competition.",
+        "image": "https://media.licdn.com/dms/image/C4E0DAQGrKyRKPbnErQ/learning-public-crop_675_1200/0/1646242166320?e=2147483647&v=beta&t=bOlojxJ7BHcCmcPCxIYhrYhxcMDX5YpoeKtQ8NCbndk",
+        "title": "Artificial Intelligence and Business Strategy",
+        "videos": [
+            {
+                "url": "https://cdn.jsdelivr.net/gh/coursedio/ce7a7a19f5684f18881d4a6e40f2145f/c0deff6ba5134b8a8f9198b7b6a22db8.mp4",
+                "duration": "1m 18s",
+                "title": "Deploying AI for your competitive advantage",
+                "subtitle": "https://cdn.jsdelivr.net/gh/coursedio/ce7a7a19f5684f18881d4a6e40f2145f/c0deff6ba5134b8a8f9198b7b6a22db8.srt"
+            },
+            {
+                "url": "https://cdn.jsdelivr.net/gh/coursedio/ce7a7a19f5684f18881d4a6e40f2145f/a9fe53e2286d4477bc45be11f932a959.mp4",
+                "duration": "5m 53s",
+                "title": "What is Artificial Intelligence?",
+                "subtitle": "https://cdn.jsdelivr.net/gh/coursedio/ce7a7a19f5684f18881d4a6e40f2145f/a9fe53e2286d4477bc45be11f932a959.srt"
+            },
+            {
+                "url": "https://cdn.jsdelivr.net/gh/coursedio/ce7a7a19f5684f18881d4a6e40f2145f/f7e302baac7f445f88c9086d39e46ca5.mp4",
+                "duration": "5m 46s",
+                "title": "A brief history of AI and its likely future",
+                "subtitle": "https://cdn.jsdelivr.net/gh/coursedio/ce7a7a19f5684f18881d4a6e40f2145f/f7e302baac7f445f88c9086d39e46ca5.srt"
+            },
+            {
+                "url": "https://cdn.jsdelivr.net/gh/coursedio/ce7a7a19f5684f18881d4a6e40f2145f/e40286b7bc6e46949fb6e4ff9bba6aa5.mp4",
+                "duration": "5m 35s",
+                "title": "How Google deploys AI to create user value",
+                "subtitle": "https://cdn.jsdelivr.net/gh/coursedio/ce7a7a19f5684f18881d4a6e40f2145f/e40286b7bc6e46949fb6e4ff9bba6aa5.srt"
+            },
+            {
+                "url": "https://cdn.jsdelivr.net/gh/coursedio/ce7a7a19f5684f18881d4a6e40f2145f/a071dbc6bb224e269322fb2e0a4a121e.mp4",
+                "duration": "5m 18s",
+                "title": "Building a robust data pipeline",
+                "subtitle": "https://cdn.jsdelivr.net/gh/coursedio/ce7a7a19f5684f18881d4a6e40f2145f/a071dbc6bb224e269322fb2e0a4a121e.srt"
+            },
+            {
+                "url": "https://cdn.jsdelivr.net/gh/coursedio/ce7a7a19f5684f18881d4a6e40f2145f/dacf9c55f64045b68a7f80106f91c633.mp4",
+                "duration": "5m 29s",
+                "title": "Different types of machine learning algorithms",
+                "subtitle": "https://cdn.jsdelivr.net/gh/coursedio/ce7a7a19f5684f18881d4a6e40f2145f/dacf9c55f64045b68a7f80106f91c633.srt"
+            },
+            {
+                "url": "https://cdn.jsdelivr.net/gh/coursedio/ce7a7a19f5684f18881d4a6e40f2145f/5a8a4adbd76d49aebcd10b906c89fb6d.mp4",
+                "duration": "5m 54s",
+                "title": "Training an AI model",
+                "subtitle": "https://cdn.jsdelivr.net/gh/coursedio/ce7a7a19f5684f18881d4a6e40f2145f/5a8a4adbd76d49aebcd10b906c89fb6d.srt"
+            },
+            {
+                "url": "https://cdn.jsdelivr.net/gh/coursedio/ce7a7a19f5684f18881d4a6e40f2145f/668c9823d26a42508c70e63880f70f58.mp4",
+                "duration": "4m 28s",
+                "title": "Using AI for deeper market research",
+                "subtitle": "https://cdn.jsdelivr.net/gh/coursedio/ce7a7a19f5684f18881d4a6e40f2145f/668c9823d26a42508c70e63880f70f58.srt"
+            },
+            {
+                "url": "https://cdn.jsdelivr.net/gh/coursedio/ce7a7a19f5684f18881d4a6e40f2145f/9b31b91294a14b0e98542b32ba145edf.mp4",
+                "duration": "5m 32s",
+                "title": "Using AI for hyper market segmentation",
+                "subtitle": "https://cdn.jsdelivr.net/gh/coursedio/ce7a7a19f5684f18881d4a6e40f2145f/9b31b91294a14b0e98542b32ba145edf.srt"
+            },
+            {
+                "url": "https://cdn.jsdelivr.net/gh/coursedio/ce7a7a19f5684f18881d4a6e40f2145f/3844fe554b804c5180eff7eb6daf14f9.mp4",
+                "duration": "5m 17s",
+                "title": "Using AI to drive product innovation",
+                "subtitle": "https://cdn.jsdelivr.net/gh/coursedio/ce7a7a19f5684f18881d4a6e40f2145f/3844fe554b804c5180eff7eb6daf14f9.srt"
+            },
+            {
+                "url": "https://cdn.jsdelivr.net/gh/coursedio/ce7a7a19f5684f18881d4a6e40f2145f/adaacbf1bb6d45f9bb8a395200dd0267.mp4",
+                "duration": "5m 32s",
+                "title": "Using AI for managing the supply chain network",
+                "subtitle": "https://cdn.jsdelivr.net/gh/coursedio/ce7a7a19f5684f18881d4a6e40f2145f/adaacbf1bb6d45f9bb8a395200dd0267.srt"
+            },
+            {
+                "url": "https://cdn.jsdelivr.net/gh/coursedio/ce7a7a19f5684f18881d4a6e40f2145f/857d9526bc144e35b3bdc3e17184ce18.mp4",
+                "duration": "5m 33s",
+                "title": "Using AI for managing internal operations",
+                "subtitle": "https://cdn.jsdelivr.net/gh/coursedio/ce7a7a19f5684f18881d4a6e40f2145f/857d9526bc144e35b3bdc3e17184ce18.srt"
+            },
+            {
+                "url": "https://cdn.jsdelivr.net/gh/coursedio/ce7a7a19f5684f18881d4a6e40f2145f/30712eb067c04c579b86f59cd94ab261.mp4",
+                "duration": "5m 53s",
+                "title": "Using AI for human resource management",
+                "subtitle": "https://cdn.jsdelivr.net/gh/coursedio/ce7a7a19f5684f18881d4a6e40f2145f/30712eb067c04c579b86f59cd94ab261.srt"
+            },
+            {
+                "url": "https://cdn.jsdelivr.net/gh/coursedio/ce7a7a19f5684f18881d4a6e40f2145f/23dc57ab2c924d46b91a24a552cd28a9.mp4",
+                "duration": "5m 14s",
+                "title": "Decision-Making by machines: Moral dilemmas",
+                "subtitle": "https://cdn.jsdelivr.net/gh/coursedio/ce7a7a19f5684f18881d4a6e40f2145f/23dc57ab2c924d46b91a24a552cd28a9.srt"
+            },
+            {
+                "url": "https://cdn.jsdelivr.net/gh/coursedio/ce7a7a19f5684f18881d4a6e40f2145f/bdb53bdc29d24ab5a7a8675bce627873.mp4",
+                "duration": "5m 25s",
+                "title": "Guarding against the risks of algorithmic bias",
+                "subtitle": "https://cdn.jsdelivr.net/gh/coursedio/ce7a7a19f5684f18881d4a6e40f2145f/bdb53bdc29d24ab5a7a8675bce627873.srt"
+            },
+            {
+                "url": "https://cdn.jsdelivr.net/gh/coursedio/ce7a7a19f5684f18881d4a6e40f2145f/eb7555e6eeba46439ad9d740d8d40d8c.mp4",
+                "duration": "5m 34s",
+                "title": "Mitigating AI\u2019s possible negative impact on jobs",
+                "subtitle": "https://cdn.jsdelivr.net/gh/coursedio/ce7a7a19f5684f18881d4a6e40f2145f/eb7555e6eeba46439ad9d740d8d40d8c.srt"
+            },
+            {
+                "url": "https://cdn.jsdelivr.net/gh/coursedio/ce7a7a19f5684f18881d4a6e40f2145f/6f08b865788a447dafc916c5c3ed84ff.mp4",
+                "duration": "3m 7s",
+                "title": "From ideas to actions",
+                "subtitle": "https://cdn.jsdelivr.net/gh/coursedio/ce7a7a19f5684f18881d4a6e40f2145f/6f08b865788a447dafc916c5c3ed84ff.srt"
+            }
+        ],
+        "expire": 2147483647000,
+        "slug": "artificial-intelligence-and-business-strategy",
+        "excercise_file_url": "https://www.linkedin.com/ambry/?x-li-ambry-ep=AQKteWzzykF2qwAAAY8xqVCIW3BmTFhKXE0N4TK5JztJkXo5Gl7MngzASFKj4Cgq1PUpUEozb2iGXag2hTlauqHGYSJP4NUmylMd3q_6AhSS2clbhEXohyGaXQSKAvoABKzvrE0skcf0VKlR_POvQsKW2Z-n5lX8Nq_7Ak3ytdxBLrPaXQ5Qof2hg1_voha154Oyr9LthQluz5DO0AxsnU_70kdnb4kAZxfV4FFAodRciP5DhQQrbmItcUbDjIPR4hOXlSRUUk9RQ8EYtYJB7KgHi-OvWv6KZjtSiP6AuLH8NMWdhG_5i6aKPeFZW7Q-c4HFWvIMHVNMmj3w-kaHamC82w3kjLgLvOV5P6ZPiG5quKOZhm5PAtscWl1Qku_loXzngssLewFGxXKKX8GQvk-KurFPbRh9jyIAnS4IBikR0_cZKzEkrO5FgpcR3kRobuB8dOHS81NwWxioVf6Hj7clSPtGomv7aItKvRpBmTz4kw6kKGO-DdYZvE5c",
+        "skills": [
+            "Artificial Intelligence for Business",
+            "Business Strategy"
+        ],
+        "category": "business"
+    }
+]

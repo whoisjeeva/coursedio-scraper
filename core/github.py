@@ -6,7 +6,7 @@ import base64
 
 class Github:
     def __init__(self):
-        self.token = "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"
+        self.token = "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"
         
     def upload(self, filepath, uploadpath, repo):
         headers = {
@@ -37,6 +37,7 @@ class Github:
             "authorization": f"token {self.token}",
             "accept": "application/vnd.github+json",
         })
+        print(r.text)
         if "name" not in r.json():
             return None
         return name
