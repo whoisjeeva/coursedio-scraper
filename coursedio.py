@@ -110,6 +110,8 @@ def main():
             
             npm.publish(course_slug, course_slug)
             GLOBAL_DATA.append(course)
+            with open("progress_output.json", "w+") as f:
+                f.write(json.dumps(GLOBAL_DATA))
     
     with open("final_data.json", "w+") as f:
         f.write(json.dumps(GLOBAL_DATA))
