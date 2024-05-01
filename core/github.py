@@ -7,7 +7,6 @@ import base64
 class Github:
     def __init__(self):
         self.token = "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"
-        self.org = "coursedio"
         
     def upload(self, filepath, uploadpath, repo):
         headers = {
@@ -24,13 +23,13 @@ class Github:
         }
 
         requests.put(
-            f"https://api.github.com/repos/{self.org}/{repo}/contents/{uploadpath}",
+            f"https://api.github.com/repos/coursedio/{repo}/contents/{uploadpath}",
             json=payload,
             headers=headers,
         )
     
     def create_repo(self, name):
-        r = requests.post(f"https://api.github.com/orgs/{self.org}/repos", json={
+        r = requests.post(f"https://api.github.com/orgs/coursedio/repos", json={
             "name": name,
             "private": False
         }, headers={

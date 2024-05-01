@@ -69,12 +69,12 @@ def main():
                 download_file(scraper.session, video_url, "v.mp4")
                 print("[ STATUS ] Uploading video '" + str(video["title"]) + "' from '" + str(c["title"]) + "'...")
                 github.upload("v.mp4", f"{filename}.mp4", repo)
-                video_url = f"https://cdn.jsdelivr.net/gh/{github.org}/{repo}/{filename}.mp4"
+                video_url = f"https://cdn.jsdelivr.net/gh/coursedio/{repo}/{filename}.mp4"
                 
                 download_file(scraper.session, subtitle_url, "subtitle.srt")
                 print("[ STATUS ] Uploading subtitle '" + str(video["title"]) + "' from '" + str(c["title"]) + "'...")
                 github.upload("subtitle.srt", f"{filename}.srt", repo)
-                subtitle_url = f"https://cdn.jsdelivr.net/gh/{github.org}/{repo}/{filename}.srt"
+                subtitle_url = f"https://cdn.jsdelivr.net/gh/coursedio/{repo}/{filename}.srt"
                 
                 video["url"] = video_url
                 video["subtitle"] = subtitle_url
