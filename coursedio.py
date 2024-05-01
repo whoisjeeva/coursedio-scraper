@@ -63,16 +63,16 @@ def main():
         category = d["category"]
         for c in d["courses"]:
             if c["slug"] in GLOBAL_SLUGS:
-                print("[ STATUS ] Skipping course details for '" + str(c["title"]) + "'...")
+                print("[ STATUS ] Skipping course details for '" + str(c["slug"]) + "'...")
                 continue
-            print("[ STATUS ] Getting course details for '" + str(c["title"]) + "'...")
+            print("[ STATUS ] Getting course details for '" + str(c["slug"]) + "'...")
             try:
                 course, _ = scraper.get_course_details_using_session(c["slug"])
             except Exception as e:
                 print(f"[ ERROR ] {e}")
                 continue
             course_slug = course["slug"]
-            print("[ STATUS ] Getting excercise files for '" + str(c["title"]) + "'...")
+            print("[ STATUS ] Getting excercise files for '" + str(c["slug"]) + "'...")
             excercise_files = scraper.get_exercise_files(course_slug)
             if len(excercise_files) > 0:
                 course["excercise_file_url"] = excercise_files[0]["url"]
@@ -82,7 +82,7 @@ def main():
             course["category"] = category
             
             
-            print("[ STATUS ] Creating repo for course '" + str(c["title"]) + "'...")
+            print("[ STATUS ] Creating repo for course '" + str(c["slug"]) + "'...")
             # repo = github.create_repo(uuid.uuid4().hex)
             
             # if repo is None:
@@ -119,13 +119,13 @@ def main():
                 if not os.path.exists(folder):
                     os.mkdir(folder)
                 download_file(scraper.session, video_url, f"{folder}/video.mp4")
-                print("[ STATUS ] Uploading video '" + str(video["title"]) + "' from '" + str(c["title"]) + "'...")
+                print("[ STATUS ] Uploading video '" + str(video["title"]) + "' from '" + str(c["slug"]) + "'...")
                 # github.upload("v.mp4", f"{filename}.mp4", repo)
                 video_url = f"https://unpkg.com/{folder}@1.0.1/video.mp4"
                 
                 try:
                     download_file(scraper.session, subtitle_url, f"{folder}/subtitle.srt")
-                    print("[ STATUS ] Uploading subtitle '" + str(video["title"]) + "' from '" + str(c["title"]) + "'...")
+                    print("[ STATUS ] Uploading subtitle '" + str(video["title"]) + "' from '" + str(c["slug"]) + "'...")
                     subtitle_url = f"https://unpkg.com/{folder}@1.0.1/subtitle.srt"
                 except Exception as e:
                     print(f"[ ERROR ] {e}")
@@ -139,7 +139,7 @@ def main():
             with open("progress_output.json", "w+") as f:
                 f.write(json.dumps(GLOBAL_DATA))
                 
-            input("The course '" + course["title"] + "' is done, press enter to continue...")
+            # input("The course '" + course["title"] + "' is done, press enter to continue...")
     
     with open("final_data.json", "w+") as f:
         f.write(json.dumps(GLOBAL_DATA))

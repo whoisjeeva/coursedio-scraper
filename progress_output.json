@@ -976,5 +976,568 @@
             "Artificial Intelligence (AI)"
         ],
         "category": "business"
+    },
+    {
+        "author_name": "Pinar Seyhan Demirdag",
+        "author_url": "https://www.linkedin.com/in/pinar-demirdag",
+        "date_published": "Mar 15, 2023",
+        "description": "Learn about the basics of generative AI, including its history, popular models, how it works, ethical implications, and much more.",
+        "image": "https://media.licdn.com/dms/image/C4E0DAQE84AgCpYxX-Q/learning-public-crop_675_1200/0/1678908578362?e=2147483647&v=beta&t=3y090CMreKMJvdOIVUJJtR05csqFIuBOSRPLYSbpq_w",
+        "title": "What Is Generative AI?",
+        "videos": [
+            {
+                "url": "https://unpkg.com/coursedio-what-is-generative-ai-generative-ai-is-a-tool-in-service-of-humanity@1.0.1/video.mp4",
+                "duration": "1m 6s",
+                "title": "Generative AI is a tool in service of humanity",
+                "subtitle": "https://unpkg.com/coursedio-what-is-generative-ai-generative-ai-is-a-tool-in-service-of-humanity@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-what-is-generative-ai-the-importance-of-generative-ai@1.0.1/video.mp4",
+                "duration": "3m 33s",
+                "title": "The importance of generative AI",
+                "subtitle": "https://unpkg.com/coursedio-what-is-generative-ai-the-importance-of-generative-ai@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-what-is-generative-ai-how-generative-ai-is-different-than-other-types-of-ai@1.0.1/video.mp4",
+                "duration": "2m 12s",
+                "title": "How generative AI is different than other types of AI",
+                "subtitle": "https://unpkg.com/coursedio-what-is-generative-ai-how-generative-ai-is-different-than-other-types-of-ai@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-what-is-generative-ai-how-generative-ai-works@1.0.1/video.mp4",
+                "duration": "4m 48s",
+                "title": "How generative AI works",
+                "subtitle": "https://unpkg.com/coursedio-what-is-generative-ai-how-generative-ai-works@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-what-is-generative-ai-creating-your-own-content@1.0.1/video.mp4",
+                "duration": "2m 4s",
+                "title": "Creating your own content",
+                "subtitle": "https://unpkg.com/coursedio-what-is-generative-ai-creating-your-own-content@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-what-is-generative-ai-the-most-famous-tools-for-generative-ai@1.0.1/video.mp4",
+                "duration": "1m 10s",
+                "title": "The most famous tools for Generative AI",
+                "subtitle": "https://unpkg.com/coursedio-what-is-generative-ai-the-most-famous-tools-for-generative-ai@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-what-is-generative-ai-natural-language-models@1.0.1/video.mp4",
+                "duration": "3m 32s",
+                "title": "Natural language models",
+                "subtitle": "https://unpkg.com/coursedio-what-is-generative-ai-natural-language-models@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-what-is-generative-ai-text-to-image-applications@1.0.1/video.mp4",
+                "duration": "3m 10s",
+                "title": "Text to image applications",
+                "subtitle": "https://unpkg.com/coursedio-what-is-generative-ai-text-to-image-applications@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-what-is-generative-ai-generative-adversarial-networks-gans@1.0.1/video.mp4",
+                "duration": "3m 35s",
+                "title": "Generative Adversarial Networks (GANs)",
+                "subtitle": "https://unpkg.com/coursedio-what-is-generative-ai-generative-adversarial-networks-gans@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-what-is-generative-ai-vae-and-anomaly-detection@1.0.1/video.mp4",
+                "duration": "2m 21s",
+                "title": "VAE and Anomaly Detection",
+                "subtitle": "https://unpkg.com/coursedio-what-is-generative-ai-vae-and-anomaly-detection@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-what-is-generative-ai-future-predictions@1.0.1/video.mp4",
+                "duration": "2m 32s",
+                "title": "Future predictions",
+                "subtitle": "https://unpkg.com/coursedio-what-is-generative-ai-future-predictions@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-what-is-generative-ai-the-future-of-jobs@1.0.1/video.mp4",
+                "duration": "3m 29s",
+                "title": "The future of jobs",
+                "subtitle": "https://unpkg.com/coursedio-what-is-generative-ai-the-future-of-jobs@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-what-is-generative-ai-moral-and-executive-skill-set-required-to-work-with-genai@1.0.1/video.mp4",
+                "duration": "3m 15s",
+                "title": "Moral and executive skill set required to work with GenAI",
+                "subtitle": "https://unpkg.com/coursedio-what-is-generative-ai-moral-and-executive-skill-set-required-to-work-with-genai@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-what-is-generative-ai-caution-when-working-with-gen-ai@1.0.1/video.mp4",
+                "duration": "2m 33s",
+                "title": "Caution when working with Gen AI",
+                "subtitle": "https://unpkg.com/coursedio-what-is-generative-ai-caution-when-working-with-gen-ai@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-what-is-generative-ai-next-steps@1.0.1/video.mp4",
+                "duration": "2m 52s",
+                "title": "Next steps",
+                "subtitle": "https://unpkg.com/coursedio-what-is-generative-ai-next-steps@1.0.1/subtitle.srt"
+            }
+        ],
+        "expire": 2147483647000,
+        "slug": "what-is-generative-ai",
+        "excercise_file_url": "https://unpkg.com/coursedio-what-is-generative-ai-excercise@1.0.1/exercise.zip",
+        "skills": [
+            "Generative AI",
+            "Artificial Intelligence for Business"
+        ],
+        "category": "business"
+    },
+    {
+        "author_name": "Kesha Williams",
+        "author_url": "https://www.linkedin.com/in/java-rock-star-kesha",
+        "date_published": "May 30, 2023",
+        "description": "Learn about the machine learning lifecycle and the steps required to build systems in this hands-on course.",
+        "image": "https://media.licdn.com/dms/image/D560DAQHTLyEF1VUcKA/learning-public-crop_675_1200/0/1685047176389?e=2147483647&v=beta&t=VHefIu7Q1B_2I8VY36PLJ3XyPde588GFO5DtAWL3kVo",
+        "title": "Artificial Intelligence Foundations: Machine Learning",
+        "videos": [
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-foundations-machine-learning-22345868-introduction-to-ai-foundations-machine-learning-course@1.0.1/video.mp4",
+                "duration": "46s",
+                "title": "Introduction to AI foundations: Machine learning course",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-foundations-machine-learning-22345868-introduction-to-ai-foundations-machine-learning-course@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-foundations-machine-learning-22345868-reviewing-the-course-scenarios@1.0.1/video.mp4",
+                "duration": "2m 39s",
+                "title": "Reviewing the course scenarios",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-foundations-machine-learning-22345868-reviewing-the-course-scenarios@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-foundations-machine-learning-22345868-exploring-machine-learning@1.0.1/video.mp4",
+                "duration": "3m 11s",
+                "title": "Exploring machine learning",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-foundations-machine-learning-22345868-exploring-machine-learning@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-foundations-machine-learning-22345868-examining-how-machines-learn@1.0.1/video.mp4",
+                "duration": "3m 36s",
+                "title": "Examining how machines learn",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-foundations-machine-learning-22345868-examining-how-machines-learn@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-foundations-machine-learning-22345868-breaking-down-the-machine-learning-lifecycle@1.0.1/video.mp4",
+                "duration": "3m 46s",
+                "title": "Breaking down the machine learning lifecycle",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-foundations-machine-learning-22345868-breaking-down-the-machine-learning-lifecycle@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-foundations-machine-learning-22345868-framing-machine-learning-problems@1.0.1/video.mp4",
+                "duration": "4m 10s",
+                "title": "Framing machine learning problems",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-foundations-machine-learning-22345868-framing-machine-learning-problems@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-foundations-machine-learning-22345868-identifying-a-pre-built-model@1.0.1/video.mp4",
+                "duration": "3m 52s",
+                "title": "Identifying a pre-built model",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-foundations-machine-learning-22345868-identifying-a-pre-built-model@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-foundations-machine-learning-22345868-understanding-tools-used-to-train-a-model@1.0.1/video.mp4",
+                "duration": "4m 18s",
+                "title": "Understanding tools used to train a model",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-foundations-machine-learning-22345868-understanding-tools-used-to-train-a-model@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-foundations-machine-learning-22345868-obtaining-data@1.0.1/video.mp4",
+                "duration": "4m 37s",
+                "title": "Obtaining data",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-foundations-machine-learning-22345868-obtaining-data@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-foundations-machine-learning-22345868-visualizing-and-understanding-data@1.0.1/video.mp4",
+                "duration": "4m 51s",
+                "title": "Visualizing and understanding data",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-foundations-machine-learning-22345868-visualizing-and-understanding-data@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-foundations-machine-learning-22345868-understanding-feature-engineering@1.0.1/video.mp4",
+                "duration": "4m 56s",
+                "title": "Understanding feature engineering",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-foundations-machine-learning-22345868-understanding-feature-engineering@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-foundations-machine-learning-22345868-demo-performing-feature-engineering@1.0.1/video.mp4",
+                "duration": "5m 58s",
+                "title": "Demo: Performing feature engineering",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-foundations-machine-learning-22345868-demo-performing-feature-engineering@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-foundations-machine-learning-22345868-understanding-learning-algorithms-and-model-training@1.0.1/video.mp4",
+                "duration": "4m 8s",
+                "title": "Understanding learning algorithms and model training",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-foundations-machine-learning-22345868-understanding-learning-algorithms-and-model-training@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-foundations-machine-learning-22345868-exploring-learning-algorithms-for-classification@1.0.1/video.mp4",
+                "duration": "4m 27s",
+                "title": "Exploring learning algorithms for classification",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-foundations-machine-learning-22345868-exploring-learning-algorithms-for-classification@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-foundations-machine-learning-22345868-reviewing-learning-algorithms-for-regression@1.0.1/video.mp4",
+                "duration": "5m 23s",
+                "title": "Reviewing learning algorithms for regression",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-foundations-machine-learning-22345868-reviewing-learning-algorithms-for-regression@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-foundations-machine-learning-22345868-examining-additional-learning-algorithms@1.0.1/video.mp4",
+                "duration": "4m 25s",
+                "title": "Examining additional learning algorithms",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-foundations-machine-learning-22345868-examining-additional-learning-algorithms@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-foundations-machine-learning-22345868-training-a-custom-machine-learning-model@1.0.1/video.mp4",
+                "duration": "5m 2s",
+                "title": "Training a custom machine learning model",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-foundations-machine-learning-22345868-training-a-custom-machine-learning-model@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-foundations-machine-learning-22345868-demo-training-a-custom-machine-learning-model@1.0.1/video.mp4",
+                "duration": "7m 39s",
+                "title": "Demo: Training a custom machine learning model",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-foundations-machine-learning-22345868-demo-training-a-custom-machine-learning-model@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-foundations-machine-learning-22345868-exploring-common-classification-metrics@1.0.1/video.mp4",
+                "duration": "4m 49s",
+                "title": "Exploring common classification metrics",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-foundations-machine-learning-22345868-exploring-common-classification-metrics@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-foundations-machine-learning-22345868-understanding-the-confusion-matrix@1.0.1/video.mp4",
+                "duration": "4m 4s",
+                "title": "Understanding the confusion matrix",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-foundations-machine-learning-22345868-understanding-the-confusion-matrix@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-foundations-machine-learning-22345868-exploring-common-regression-metrics@1.0.1/video.mp4",
+                "duration": "5m 14s",
+                "title": "Exploring common regression metrics",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-foundations-machine-learning-22345868-exploring-common-regression-metrics@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-foundations-machine-learning-22345868-determining-feature-importance@1.0.1/video.mp4",
+                "duration": "4m 25s",
+                "title": "Determining feature importance",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-foundations-machine-learning-22345868-determining-feature-importance@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-foundations-machine-learning-22345868-combating-bias@1.0.1/video.mp4",
+                "duration": "3m 38s",
+                "title": "Combating bias",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-foundations-machine-learning-22345868-combating-bias@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-foundations-machine-learning-22345868-structuring-a-machine-learning-pipeline@1.0.1/video.mp4",
+                "duration": "3m 59s",
+                "title": "Structuring a machine learning pipeline",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-foundations-machine-learning-22345868-structuring-a-machine-learning-pipeline@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-foundations-machine-learning-22345868-demo-designing-and-building-a-pipeline@1.0.1/video.mp4",
+                "duration": "5m 4s",
+                "title": "Demo: Designing and building a pipeline",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-foundations-machine-learning-22345868-demo-designing-and-building-a-pipeline@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-foundations-machine-learning-22345868-your-machine-learning-journey@1.0.1/video.mp4",
+                "duration": "1m 59s",
+                "title": "Your machine learning journey",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-foundations-machine-learning-22345868-your-machine-learning-journey@1.0.1/subtitle.srt"
+            }
+        ],
+        "expire": 2147483647000,
+        "slug": "artificial-intelligence-foundations-machine-learning-22345868",
+        "excercise_file_url": null,
+        "skills": [
+            "Machine Learning"
+        ],
+        "category": "technology"
+    },
+    {
+        "author_name": "Jonathan Reichental",
+        "author_url": "https://www.linkedin.com/in/reichental",
+        "date_published": "Sep 18, 2023",
+        "description": "Learn about the role of artificial intelligence in business, with particular emphasis on the new GPT-4 technology released by Open AI.",
+        "image": "https://media.licdn.com/dms/image/D560DAQGwDfMc9QeL1g/learning-public-crop_675_1200/0/1694797635267?e=2147483647&v=beta&t=zC5eUroxz5vdw9CkTtfQ1pSJuPvPFKuqo-fmnuLO2AQ",
+        "title": "Introduction to Generative AI with GPT",
+        "videos": [
+            {
+                "url": "https://unpkg.com/coursedio-introduction-to-generative-ai-with-gpt-a-leap-in-artificial-intelligence@1.0.1/video.mp4",
+                "duration": "49s",
+                "title": "A leap in artificial intelligence",
+                "subtitle": "https://unpkg.com/coursedio-introduction-to-generative-ai-with-gpt-a-leap-in-artificial-intelligence@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-introduction-to-generative-ai-with-gpt-and-then-there-was-gpt@1.0.1/video.mp4",
+                "duration": "2m 58s",
+                "title": "And then there was GPT",
+                "subtitle": "https://unpkg.com/coursedio-introduction-to-generative-ai-with-gpt-and-then-there-was-gpt@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-introduction-to-generative-ai-with-gpt-ai-the-story-so-far@1.0.1/video.mp4",
+                "duration": "4m 37s",
+                "title": "AI: The story so far",
+                "subtitle": "https://unpkg.com/coursedio-introduction-to-generative-ai-with-gpt-ai-the-story-so-far@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-introduction-to-generative-ai-with-gpt-openai-is-founded@1.0.1/video.mp4",
+                "duration": "5m 14s",
+                "title": "OpenAI is founded",
+                "subtitle": "https://unpkg.com/coursedio-introduction-to-generative-ai-with-gpt-openai-is-founded@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-introduction-to-generative-ai-with-gpt-the-openai-charter@1.0.1/video.mp4",
+                "duration": "4m 23s",
+                "title": "The OpenAI charter",
+                "subtitle": "https://unpkg.com/coursedio-introduction-to-generative-ai-with-gpt-the-openai-charter@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-introduction-to-generative-ai-with-gpt-gpt-and-natural-language-processing-nlp@1.0.1/video.mp4",
+                "duration": "3m 31s",
+                "title": "GPT and Natural Language Processing (NLP)",
+                "subtitle": "https://unpkg.com/coursedio-introduction-to-generative-ai-with-gpt-gpt-and-natural-language-processing-nlp@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-introduction-to-generative-ai-with-gpt-gpt-and-generative-ai@1.0.1/video.mp4",
+                "duration": "3m 59s",
+                "title": "GPT and Generative AI",
+                "subtitle": "https://unpkg.com/coursedio-introduction-to-generative-ai-with-gpt-gpt-and-generative-ai@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-introduction-to-generative-ai-with-gpt-what-is-gpt@1.0.1/video.mp4",
+                "duration": "5m 25s",
+                "title": "What is GPT?",
+                "subtitle": "https://unpkg.com/coursedio-introduction-to-generative-ai-with-gpt-what-is-gpt@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-introduction-to-generative-ai-with-gpt-chatgpt-and-prompt-engineering@1.0.1/video.mp4",
+                "duration": "6m 14s",
+                "title": "ChatGPT and prompt engineering",
+                "subtitle": "https://unpkg.com/coursedio-introduction-to-generative-ai-with-gpt-chatgpt-and-prompt-engineering@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-introduction-to-generative-ai-with-gpt-gpt-in-practice@1.0.1/video.mp4",
+                "duration": "5m 54s",
+                "title": "GPT in practice",
+                "subtitle": "https://unpkg.com/coursedio-introduction-to-generative-ai-with-gpt-gpt-in-practice@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-introduction-to-generative-ai-with-gpt-limitations-of-gpt@1.0.1/video.mp4",
+                "duration": "4m 36s",
+                "title": "Limitations of GPT",
+                "subtitle": "https://unpkg.com/coursedio-introduction-to-generative-ai-with-gpt-limitations-of-gpt@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-introduction-to-generative-ai-with-gpt-challenges-and-risks-of-ai@1.0.1/video.mp4",
+                "duration": "5m 31s",
+                "title": "Challenges and risks of AI",
+                "subtitle": "https://unpkg.com/coursedio-introduction-to-generative-ai-with-gpt-challenges-and-risks-of-ai@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-introduction-to-generative-ai-with-gpt-business-preparation-for-ai@1.0.1/video.mp4",
+                "duration": "4m 49s",
+                "title": "Business preparation for AI",
+                "subtitle": "https://unpkg.com/coursedio-introduction-to-generative-ai-with-gpt-business-preparation-for-ai@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-introduction-to-generative-ai-with-gpt-career-opportunities-in-ai-and-gpt@1.0.1/video.mp4",
+                "duration": "3m 55s",
+                "title": "Career opportunities in AI and GPT",
+                "subtitle": "https://unpkg.com/coursedio-introduction-to-generative-ai-with-gpt-career-opportunities-in-ai-and-gpt@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-introduction-to-generative-ai-with-gpt-the-future-of-ai-and-next-steps@1.0.1/video.mp4",
+                "duration": "3m 24s",
+                "title": "The Future of AI and Next Steps",
+                "subtitle": "https://unpkg.com/coursedio-introduction-to-generative-ai-with-gpt-the-future-of-ai-and-next-steps@1.0.1/subtitle.srt"
+            }
+        ],
+        "expire": 2147483647000,
+        "slug": "introduction-to-generative-ai-with-gpt",
+        "excercise_file_url": "https://unpkg.com/coursedio-introduction-to-generative-ai-with-gpt-excercise@1.0.1/exercise.zip",
+        "skills": [
+            "Artificial Intelligence for Business",
+            "Artificial Intelligence (AI)"
+        ],
+        "category": "business"
+    },
+    {
+        "author_name": "Jim Sterne",
+        "author_url": "https://www.linkedin.com/in/jimsterne",
+        "date_published": "Nov 17, 2020",
+        "description": "Learn how artificial intelligence is reshaping the way marketing is done at both large and small organizations.",
+        "image": "https://media.licdn.com/dms/image/C4E0DAQEmbueo0PFIWw/learning-public-crop_675_1200/0/1605552988539?e=2147483647&v=beta&t=vcbZE9oC68FDfMlkfTJwVNUFug_4Pr7M3NR9MlXXveQ",
+        "title": "Artificial Intelligence for Marketing",
+        "videos": [
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-marketing-artificial-intelligence-and-machine-learning-in-marketing@1.0.1/video.mp4",
+                "duration": "58s",
+                "title": "Artificial intelligence and machine learning in marketing",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-marketing-artificial-intelligence-and-machine-learning-in-marketing@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-marketing-defining-artificial-intelligence@1.0.1/video.mp4",
+                "duration": "3m 34s",
+                "title": "Defining artificial intelligence",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-marketing-defining-artificial-intelligence@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-marketing-a-word-of-caution@1.0.1/video.mp4",
+                "duration": "3m 25s",
+                "title": "A word of caution",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-marketing-a-word-of-caution@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-marketing-why-ai-now@1.0.1/video.mp4",
+                "duration": "2m 41s",
+                "title": "Why AI now?",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-marketing-why-ai-now@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-marketing-natural-language-processing@1.0.1/video.mp4",
+                "duration": "3m 35s",
+                "title": "Natural language processing",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-marketing-natural-language-processing@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-marketing-conversation-bots@1.0.1/video.mp4",
+                "duration": "2m 57s",
+                "title": "Conversation bots",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-marketing-conversation-bots@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-marketing-computer-vision@1.0.1/video.mp4",
+                "duration": "2m 54s",
+                "title": "Computer vision",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-marketing-computer-vision@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-marketing-self-driving-cars-and-robots@1.0.1/video.mp4",
+                "duration": "3m 47s",
+                "title": "Self-driving cars and robots",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-marketing-self-driving-cars-and-robots@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-marketing-machine-learning-a-new-type-of-software@1.0.1/video.mp4",
+                "duration": "3m 34s",
+                "title": "Machine learning: A new type of software",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-marketing-machine-learning-a-new-type-of-software@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-marketing-supervised-learning@1.0.1/video.mp4",
+                "duration": "3m 24s",
+                "title": "Supervised learning",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-marketing-supervised-learning@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-marketing-unsupervised-learning@1.0.1/video.mp4",
+                "duration": "3m 5s",
+                "title": "Unsupervised learning",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-marketing-unsupervised-learning@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-marketing-reinforcement-learning@1.0.1/video.mp4",
+                "duration": "3m 8s",
+                "title": "Reinforcement learning",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-marketing-reinforcement-learning@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-marketing-dimensionality-and-cardinality@1.0.1/video.mp4",
+                "duration": "3m 16s",
+                "title": "Dimensionality and cardinality",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-marketing-dimensionality-and-cardinality@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-marketing-programmatic-advertising-and-attribution@1.0.1/video.mp4",
+                "duration": "3m 8s",
+                "title": "Programmatic advertising and attribution",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-marketing-programmatic-advertising-and-attribution@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-marketing-personalization-with-ai@1.0.1/video.mp4",
+                "duration": "2m 58s",
+                "title": "Personalization with AI",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-marketing-personalization-with-ai@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-marketing-clearly-identified-goals@1.0.1/video.mp4",
+                "duration": "3m 11s",
+                "title": "Clearly identified goals",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-marketing-clearly-identified-goals@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-marketing-know-your-data@1.0.1/video.mp4",
+                "duration": "3m 25s",
+                "title": "Know your data",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-marketing-know-your-data@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-marketing-which-projects-are-right-for-ai-and-ml@1.0.1/video.mp4",
+                "duration": "3m 20s",
+                "title": "Which projects are right for AI and ML?",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-marketing-which-projects-are-right-for-ai-and-ml@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-marketing-buy-vs-build@1.0.1/video.mp4",
+                "duration": "3m 23s",
+                "title": "Buy vs. Build",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-marketing-buy-vs-build@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-marketing-determine-which-data-sets-are-useful@1.0.1/video.mp4",
+                "duration": "3m 1s",
+                "title": "Determine which data sets are useful",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-marketing-determine-which-data-sets-are-useful@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-marketing-navigate-corporate-culture@1.0.1/video.mp4",
+                "duration": "2m 50s",
+                "title": "Navigate corporate culture",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-marketing-navigate-corporate-culture@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-marketing-what-humans-do-better-than-machines@1.0.1/video.mp4",
+                "duration": "3m 19s",
+                "title": "What humans do better than machines",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-marketing-what-humans-do-better-than-machines@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-marketing-integrated-cognition-is-your-superpower@1.0.1/video.mp4",
+                "duration": "4m 2s",
+                "title": "Integrated cognition is your superpower",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-marketing-integrated-cognition-is-your-superpower@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-marketing-augment-yourself@1.0.1/video.mp4",
+                "duration": "3m 37s",
+                "title": "Augment yourself",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-marketing-augment-yourself@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-marketing-marketing-gets-weird-here-comes-the-future@1.0.1/video.mp4",
+                "duration": "3m 23s",
+                "title": "Marketing gets weird - here comes the future",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-marketing-marketing-gets-weird-here-comes-the-future@1.0.1/subtitle.srt"
+            },
+            {
+                "url": "https://unpkg.com/coursedio-artificial-intelligence-for-marketing-taking-action-to-begin-using-ai-in-marketing@1.0.1/video.mp4",
+                "duration": "1m 55s",
+                "title": "Taking action to begin using AI in marketing",
+                "subtitle": "https://unpkg.com/coursedio-artificial-intelligence-for-marketing-taking-action-to-begin-using-ai-in-marketing@1.0.1/subtitle.srt"
+            }
+        ],
+        "expire": 2147483647000,
+        "slug": "artificial-intelligence-for-marketing",
+        "excercise_file_url": null,
+        "skills": [
+            "Artificial Intelligence for Business",
+            "Digital Marketing"
+        ],
+        "category": "business"
     }
 ]
