@@ -167,8 +167,20 @@ def main():
         f.write(json.dumps(GLOBAL_DATA))
 
 
+def is_contain_digits(s):
+    nodes = s.split("-")
+    contains = False
+    for node in nodes:
+        contains = all(i.isdigit() for i in s)
+    return contains
+
+
 def remove_digits(s):
-    return ''.join([i for i in s if not i.isdigit()]) + "a"
+    if is_contain_digits:
+        return ''.join([i for i in s if not i.isdigit()]) + random.choice(string.ascii_letters).lower()
+    else:
+        return ''.join([i for i in s if not i.isdigit()])
+
 
 def download_file(session, url, filepath):
     try:
