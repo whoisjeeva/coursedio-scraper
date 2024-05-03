@@ -168,8 +168,7 @@ def main():
 
 
 def remove_digits(s):
-    return s
-    # return ''.join([i for i in s if not i.isdigit()]) + random.choice(string.ascii_letters).lower()
+    return ''.join([i for i in s if not i.isdigit()]) + "a"
 
 def download_file(session, url, filepath):
     try:
