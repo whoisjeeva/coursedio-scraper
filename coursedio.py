@@ -20,6 +20,7 @@ def main():
     parser.add_argument(["--slug"], description="course slug")
     parser.add_argument(["--category"], description="course category")
     parser.add_argument(["--skills"], description="course skills")
+    parser.add_argument(["--cookies"], description="use existing session (json file)")
     args = parser.parse()
     
     if args.help:
@@ -57,7 +58,12 @@ def main():
     npm = Npm()
     scraper = Scraper()
     print("[ STATUS ] Logging in...")
-    scraper.login("33667870", "1609")
+    if args.cookies:
+        with open(args.cookies, "r") as f:
+            cookies = json.load(f)
+        scraper.login_with_cookies(cookies)
+    else:
+        scraper.login("33667870", "1609")
 
     for d in data:
         category = d["category"]
@@ -90,12 +96,14 @@ def main():
             
             if course["excercise_file_url"] is not None:
                 folder = f"coursedio-{course_slug}-excercise"
-                if not os.path.exists(folder):
-                    os.mkdir(folder)
-                download_file(scraper.session, course["excercise_file_url"], f"{folder}/exercise.zip")
-                print("[ STATUS ] Uploading excercise files for '" + str(course["title"]) + "'...")
-                # github.upload("ex.zip", f"{repo}.mp4", repo)
-                npm.publish(folder, folder)
+                r = requests.get(f"https://unpkg.com/{folder}@1.0.1/exercise.zip?meta")
+                if r.text == "":
+                    if not os.path.exists(folder):
+                        os.mkdir(folder)
+                    download_file(scraper.session, course["excercise_file_url"], f"{folder}/exercise.zip")
+                    print("[ STATUS ] Uploading excercise files for '" + str(course["title"]) + "'...")
+                    # github.upload("ex.zip", f"{repo}.mp4", repo)
+                    npm.publish(folder, folder)
                 course["excercise_file_url"] = f"https://unpkg.com/{folder}@1.0.1/exercise.zip"
             else:
                 course["excercise_file_url"] = None
@@ -116,22 +124,23 @@ def main():
                 # upload video and subtitle and replace url
 
                 folder = f"coursedio-{course_slug}-{video_slug}"
-                if not os.path.exists(folder):
-                    os.mkdir(folder)
-                download_file(scraper.session, video_url, f"{folder}/video.mp4")
-                print("[ STATUS ] Uploading video '" + str(video["title"]) + "' from '" + str(c["slug"]) + "'...")
-                # github.upload("v.mp4", f"{filename}.mp4", repo)
-                video_url = f"https://unpkg.com/{folder}@1.0.1/video.mp4"
-                
-                try:
-                    download_file(scraper.session, subtitle_url, f"{folder}/subtitle.srt")
-                    print("[ STATUS ] Uploading subtitle '" + str(video["title"]) + "' from '" + str(c["slug"]) + "'...")
-                    subtitle_url = f"https://unpkg.com/{folder}@1.0.1/subtitle.srt"
-                except Exception as e:
-                    print(f"[ ERROR ] {e}")
-                    subtitle_url = None
-                
-                video["url"] = video_url
+                r = requests.get(f"https://unpkg.com/{folder}@1.0.1/video.mp4?meta")
+                if r.text == "":
+                    if not os.path.exists(folder):
+                        os.mkdir(folder)
+                    download_file(scraper.session, video_url, f"{folder}/video.mp4")
+                    print("[ STATUS ] Uploading video '" + str(video["title"]) + "' from '" + str(c["slug"]) + "'...")
+                    # github.upload("v.mp4", f"{filename}.mp4", repo)
+                    
+                    try:
+                        download_file(scraper.session, subtitle_url, f"{folder}/subtitle.srt")
+                        print("[ STATUS ] Uploading subtitle '" + str(video["title"]) + "' from '" + str(c["slug"]) + "'...")
+                        subtitle_url = f"https://unpkg.com/{folder}@1.0.1/subtitle.srt"
+                    except Exception as e:
+                        print(f"[ ERROR ] {e}")
+                        subtitle_url = None
+
+                video["url"] = f"https://unpkg.com/{folder}@1.0.1/video.mp4"
                 video["subtitle"] = subtitle_url
                 npm.publish(folder, folder)
             

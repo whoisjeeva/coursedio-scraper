@@ -13,6 +13,9 @@ import urllib.parse as urlparse
 from urllib.parse import parse_qs
 import json
 import re
+import time
+import sys
+import random
 
 
 class Scraper:
@@ -21,48 +24,72 @@ class Scraper:
         self.login_url = "https://www.linkedin.com/learning-login/go/loganlibraries"
         self.csrf = None
 
+    def login_with_cookies(self, cookies):
+        for cookie in cookies:
+            self.session.cookies.set(cookie["name"], cookie["value"])
+
+    def login_with_portal_url(self, libraryCardId, pin, portal_url):
+        try:
+            r = self.session.get(portal_url, headers={
+                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+                "Accept-Language": "en-US,en;q=0.9"
+            })
+            # with open("test.html", "wb") as f:
+            #     f.write(r.content) 
+            s = BeautifulSoup(r.content, "html.parser")
+
+            csrfToken = s.find("form").select("[name='csrfToken']")[0]["value"]
+            # libraryCardId = "33667870"
+            # pin = "1609"
+            account = s.find("form").select("[name='account']")[0]["value"]
+            appInstance = s.find("form").select("[name='appInstance']")[0]["value"]
+            redirect = s.find("form").select("[name='redirect']")[0]["value"]
+            authUUID = s.find("form").select("[name='authUUID']")[0]["value"]
+
+
+            library_callback_url = "https://www.linkedin.com/learning-login/go/library-callback"
+            payload = {
+                "csrfToken": csrfToken,
+                "libraryCardId": libraryCardId,
+                "pin": pin,
+                "account": account,
+                "appInstance": appInstance,
+                "redirect": redirect,
+                "authUUID": authUUID
+            }
+
+            d = self.session.post(library_callback_url, data=payload).json()
+            self.session.post(f"https://www.linkedin.com/checkpoint/enterprise/library/{account}/LEARNING/{appInstance}", data={
+                "redirectUrl": d["redirectUrl"],
+                "pin": d["pin"],
+                "libraryCardId": d["libraryCardId"]
+            })
+
+            self.csrf = self.session.cookies.get_dict()["JSESSIONID"]
+        except KeyboardInterrupt:
+            sys.exit()
+        except Exception as e:
+            print(f"[ ERROR ] Log into portal failed {e}")
+            time.sleep(random.randint(2, 5))
+            print("[ STATUS ] Loggin again into portal...")
+            self.login_with_portal_url(libraryCardId, pin, portal_url)
+
     def login(self, libraryCardId, pin):
-        r = self.session.get(self.login_url, headers={
-            "Accept-Language": "en-US,en;q=0.9"
-        })
-        s = BeautifulSoup(r.content, "html.parser")
-        portal_url = s.select("a[class^='library-go']")[0]["href"]
-        r = self.session.get(portal_url, headers={
-            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
-            "Accept-Language": "en-US,en;q=0.9"
-        })
-        # with open("test.html", "wb") as f:
-        #     f.write(r.content) 
-        s = BeautifulSoup(r.content, "html.parser")
-
-        csrfToken = s.find("form").select("[name='csrfToken']")[0]["value"]
-        # libraryCardId = "33667870"
-        # pin = "1609"
-        account = s.find("form").select("[name='account']")[0]["value"]
-        appInstance = s.find("form").select("[name='appInstance']")[0]["value"]
-        redirect = s.find("form").select("[name='redirect']")[0]["value"]
-        authUUID = s.find("form").select("[name='authUUID']")[0]["value"]
-
-
-        library_callback_url = "https://www.linkedin.com/learning-login/go/library-callback"
-        payload = {
-            "csrfToken": csrfToken,
-            "libraryCardId": libraryCardId,
-            "pin": pin,
-            "account": account,
-            "appInstance": appInstance,
-            "redirect": redirect,
-            "authUUID": authUUID
-        }
-
-        d = self.session.post(library_callback_url, data=payload).json()
-        self.session.post(f"https://www.linkedin.com/checkpoint/enterprise/library/{account}/LEARNING/{appInstance}", data={
-            "redirectUrl": d["redirectUrl"],
-            "pin": d["pin"],
-            "libraryCardId": d["libraryCardId"]
-        })
-
-        self.csrf = self.session.cookies.get_dict()["JSESSIONID"]
+        try:
+            r = self.session.get(self.login_url, headers={
+                "Accept-Language": "en-US,en;q=0.9"
+            })
+            s = BeautifulSoup(r.content, "html.parser")
+            portal_url = s.select("a[class^='library-go']")[0]["href"]
+            self.login_with_portal_url(libraryCardId, pin, portal_url)
+        except KeyboardInterrupt:
+            sys.exit(1)
+        except Exception as e:
+            print(f"[ ERROR ] Loggin failed {e}")
+            time.sleep(random.randint(2, 5))
+            print("[ STATUS ] Loggin again...")
+            self.login(libraryCardId, pin)
+            
 
 
     def search(self, query, start=0):
