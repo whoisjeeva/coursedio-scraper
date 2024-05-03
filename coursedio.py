@@ -3,6 +3,8 @@ import sys
 import os
 from tqdm import tqdm
 import requests
+import string
+import random
 
 from core.github import Github
 from core.npm import Npm
@@ -21,6 +23,7 @@ def main():
     parser.add_argument(["--category"], description="course category")
     parser.add_argument(["--skills"], description="course skills")
     parser.add_argument(["--category"], description="use a specific category [business, technology, creative]")
+    parser.add_argument(["--search"], description="search courses")
     args = parser.parse()
     
     if args.help:
@@ -67,6 +70,16 @@ def main():
     scraper = Scraper()
     print("[ STATUS ] Logging in...")
     scraper.login("33667870", "1609")
+    
+    if args.category and args.search:
+        data = [{ "category": args.category, "courses": [] }]
+        results = scraper.search(args.search)
+        for d in results["data"]:
+            data[0]["courses"].append({
+                "slug": d["url"],
+                "title": d["title"],
+                "skills": []
+            })
 
     for d in data:
         category = d["category"]
@@ -98,7 +111,7 @@ def main():
             #     raise Exception("Repo failed to create")
             
             if course["excercise_file_url"] is not None:
-                folder = f"coursedio-{course_slug}-excercise"
+                folder = f"coursedio-{remove_digits(course_slug)}-excercise"
                 if not os.path.exists(folder):
                     os.mkdir(folder)
                 download_file(scraper.session, course["excercise_file_url"], f"{folder}/exercise.zip")
@@ -124,7 +137,7 @@ def main():
                 video_url = get_high_quality_video(video_details["streams"])["url"]
                 # upload video and subtitle and replace url
 
-                folder = f"coursedio-{course_slug}-{video_slug}"
+                folder = f"coursedio-{remove_digits(course_slug)}-{remove_digits(video_slug)}"
                 if not os.path.exists(folder):
                     os.mkdir(folder)
                 download_file(scraper.session, video_url, f"{folder}/video.mp4")
@@ -153,6 +166,10 @@ def main():
     with open("final_data.json", "w+") as f:
         f.write(json.dumps(GLOBAL_DATA))
 
+
+def remove_digits(s):
+    return s
+    # return ''.join([i for i in s if not i.isdigit()]) + random.choice(string.ascii_letters).lower()
 
 def download_file(session, url, filepath):
     try:
