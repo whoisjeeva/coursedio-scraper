@@ -20,7 +20,7 @@ def main():
     parser.add_argument(["--slug"], description="course slug")
     parser.add_argument(["--category"], description="course category")
     parser.add_argument(["--skills"], description="course skills")
-    parser.add_argument(["--cookies"], description="use existing session (json file)")
+    parser.add_argument(["--category"], description="use a specific category [business, technology, creative]")
     args = parser.parse()
     
     if args.help:
@@ -38,6 +38,14 @@ def main():
     else:
         with open("data.json", "r") as f:
             data = json.load(f)
+        
+    if args.category:
+        tmp = []
+        for d in data:
+            if d["category"] == args.category:
+                tmp.append(d)
+                break
+        data = tmp
     
     progress_data = []
     if os.path.exists("progress_output.json"):
@@ -58,12 +66,7 @@ def main():
     npm = Npm()
     scraper = Scraper()
     print("[ STATUS ] Logging in...")
-    if args.cookies:
-        with open(args.cookies, "r") as f:
-            cookies = json.load(f)
-        scraper.login_with_cookies(cookies)
-    else:
-        scraper.login("33667870", "1609")
+    scraper.login("33667870", "1609")
 
     for d in data:
         category = d["category"]
