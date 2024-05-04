@@ -178,9 +178,10 @@ def is_contain_digits(s):
 def remove_digits(s):
     s = s.replace("node", "my")
     if is_contain_digits:
-        return ''.join([i for i in s if not i.isdigit()]) + random.choice(string.ascii_letters).lower() + random.choice(string.ascii_letters).lower() + random.choice(string.ascii_letters).lower()
+        s = ''.join([i for i in s if not i.isdigit()]) + s.split("-")[-2]
     else:
-        return ''.join([i for i in s if not i.isdigit()])
+        s = ''.join([i for i in s if not i.isdigit()])
+    return s[::-1]
 
 
 def download_file(session, url, filepath):
