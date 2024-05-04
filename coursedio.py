@@ -176,6 +176,7 @@ def is_contain_digits(s):
 
 
 def remove_digits(s):
+    s = s.replace("node", "my")
     if is_contain_digits:
         return ''.join([i for i in s if not i.isdigit()]) + random.choice(string.ascii_letters).lower() + random.choice(string.ascii_letters).lower() + random.choice(string.ascii_letters).lower()
     else:
