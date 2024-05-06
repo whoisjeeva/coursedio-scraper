@@ -178,7 +178,10 @@ def is_contain_digits(s):
 def remove_digits(s):
     s = s.replace("node", "my")
     if is_contain_digits:
-        s = ''.join([i for i in s if not i.isdigit()]) + s.split("-")[-2]
+        if len(s.split("-")) >= 2:
+            s = ''.join([i for i in s if not i.isdigit()]) + s.split("-")[-2]
+        else:
+            s = ''.join([i for i in s if not i.isdigit()]) + s.split("-")[-1]
     else:
         s = ''.join([i for i in s if not i.isdigit()])
     return s[::-1]
