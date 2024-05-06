@@ -83,7 +83,7 @@ def main():
 
     for d in data:
         category = d["category"]
-        for c in d["courses"]:
+        for course_index, c in enumerate(d["courses"]):
             if c["slug"] in GLOBAL_SLUGS:
                 print("[ STATUS ] Skipping course details for '" + str(c["slug"]) + "'...")
                 continue
@@ -111,7 +111,7 @@ def main():
             #     raise Exception("Repo failed to create")
             
             if course["excercise_file_url"] is not None:
-                folder = f"coursedio-{remove_digits(course_slug)}-excercise"
+                folder = f"coursedio-{remove_digits(course_slug, course_index)}-excercise"
                 if not os.path.exists(folder):
                     os.mkdir(folder)
                 download_file(scraper.session, course["excercise_file_url"], f"{folder}/exercise.zip")
@@ -122,7 +122,7 @@ def main():
             else:
                 course["excercise_file_url"] = None
 
-            for i, video in enumerate(course["videos"]):
+            for video_index, video in enumerate(course["videos"]):
                 # if os.path.exists("v.mp4"):
                 #     os.remove("v.mp4")
                     
@@ -137,7 +137,7 @@ def main():
                 video_url = get_high_quality_video(video_details["streams"])["url"]
                 # upload video and subtitle and replace url
 
-                folder = f"coursedio-{remove_digits(course_slug)}-{remove_digits(video_slug)}"
+                folder = f"coursedio-{remove_digits(course_slug, course_index)}-{remove_digits(video_slug, video_index)}"
                 if not os.path.exists(folder):
                     os.mkdir(folder)
                 download_file(scraper.session, video_url, f"{folder}/video.mp4")
@@ -175,15 +175,8 @@ def is_contain_digits(s):
     return contains
 
 
-def remove_digits(s):
-    s = s.replace("node", "my")
-    if is_contain_digits:
-        if len(s.split("-")) >= 2:
-            s = ''.join([i for i in s if not i.isdigit()]) + s.split("-")[-2]
-        else:
-            s = ''.join([i for i in s if not i.isdigit()]) + s.split("-")[-1]
-    else:
-        s = ''.join([i for i in s if not i.isdigit()])
+def remove_digits(s, index):
+    s = ''.join([i for i in s if not i.isdigit()]) + str(index)
     return s[::-1]
 
 
