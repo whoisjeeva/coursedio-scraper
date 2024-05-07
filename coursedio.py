@@ -143,7 +143,7 @@ def main():
                     os.mkdir(folder)
                 download_file(scraper.session, video_url, f"{folder}/video.mp4")
                 videoClip = VideoFileClip(f"{folder}/video.mp4")
-                videoClip.write_videofile(f"{folder}/video.webm")
+                videoClip.write_videofile(f"{folder}/video.webm", threads = 8, fps=24)
                 os.remove(f"{folder}/video.mp4")
                 print("[ STATUS ] Uploading video '" + str(video["title"]) + "' from '" + str(c["slug"]) + "'...")
                 # github.upload("v.mp4", f"{filename}.mp4", repo)
