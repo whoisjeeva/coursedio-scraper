@@ -1,10 +1,9 @@
-from core.scraper import Scraper
+from moviepy.editor import VideoFileClip
+import os
 
 
-
-scraper = Scraper()
-scraper.login("33667870", "1609")
-results = scraper.search("python")
-results = scraper.get_course_details(results["data"][0].url)
-
-print(results)
+videoClip = VideoFileClip("v.mp4")
+videoClip.write_videofile("v.webm")
+videoClip = VideoFileClip("v.webm")
+os.remove("v.mp4")
+videoClip.write_videofile("v.mp4")

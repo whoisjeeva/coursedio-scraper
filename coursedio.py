@@ -5,6 +5,7 @@ from tqdm import tqdm
 import requests
 import string
 import random
+from moviepy.editor import VideoFileClip
 
 from core.github import Github
 from core.npm import Npm
@@ -141,9 +142,12 @@ def main():
                 if not os.path.exists(folder):
                     os.mkdir(folder)
                 download_file(scraper.session, video_url, f"{folder}/video.mp4")
+                videoClip = VideoFileClip(f"{folder}/video.mp4")
+                videoClip.write_videofile(f"{folder}/video.webm")
+                os.remove(f"{folder}/video.mp4")
                 print("[ STATUS ] Uploading video '" + str(video["title"]) + "' from '" + str(c["slug"]) + "'...")
                 # github.upload("v.mp4", f"{filename}.mp4", repo)
-                video_url = f"https://unpkg.com/{folder}@1.0.1/video.mp4"
+                video_url = f"https://unpkg.com/{folder}@1.0.1/video.webm"
                 
                 try:
                     download_file(scraper.session, subtitle_url, f"{folder}/subtitle.srt")
