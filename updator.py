@@ -28,6 +28,9 @@ def main():
                 video["url"] = f"https://unpkg.com/{folder}@1.0.2/video.webm"
                 video["subtitle"] = f"https://unpkg.com/{folder}@1.0.2/subtitle.srt"
                 
+                with open("updated.json", "w+") as f:
+                    f.write(json.dumps(data))
+
     with open("updated.json", "w+") as f:
         f.write(json.dumps(data))
     print("Done.")
