@@ -53,3 +53,8 @@ def download_file(url, filepath):
             raise RuntimeError("Could not download file")
     except requests.exceptions.ChunkedEncodingError:
         download_file(url, filepath)
+
+
+
+if __name__ == "__main__":
+    main()

@@ -119,7 +119,7 @@ def main():
                 print("[ STATUS ] Uploading excercise files for '" + str(course["title"]) + "'...")
                 # github.upload("ex.zip", f"{repo}.mp4", repo)
                 npm.publish(folder, folder)
-                course["excercise_file_url"] = f"https://unpkg.com/{folder}@1.0.1/exercise.zip"
+                course["excercise_file_url"] = f"https://unpkg.com/{folder}@1.0.2/exercise.zip"
             else:
                 course["excercise_file_url"] = None
 
@@ -142,17 +142,17 @@ def main():
                 if not os.path.exists(folder):
                     os.mkdir(folder)
                 download_file(scraper.session, video_url, f"{folder}/video.mp4")
-                videoClip = VideoFileClip(f"{folder}/video.mp4")
-                videoClip.write_videofile(f"{folder}/video.webm", threads = 8, fps=24)
-                os.remove(f"{folder}/video.mp4")
+                # videoClip = VideoFileClip(f"{folder}/video.mp4")
+                # videoClip.write_videofile(f"{folder}/video.webm", threads = 8)
+                # os.remove(f"{folder}/video.mp4")
+                # video_url = f"https://unpkg.com/{folder}@1.0.2/video.webm"
+                video_url = f"https://unpkg.com/{folder}@1.0.2/video.mp4"
                 print("[ STATUS ] Uploading video '" + str(video["title"]) + "' from '" + str(c["slug"]) + "'...")
-                # github.upload("v.mp4", f"{filename}.mp4", repo)
-                video_url = f"https://unpkg.com/{folder}@1.0.1/video.webm"
                 
                 try:
                     download_file(scraper.session, subtitle_url, f"{folder}/subtitle.srt")
                     print("[ STATUS ] Uploading subtitle '" + str(video["title"]) + "' from '" + str(c["slug"]) + "'...")
-                    subtitle_url = f"https://unpkg.com/{folder}@1.0.1/subtitle.srt"
+                    subtitle_url = f"https://unpkg.com/{folder}@1.0.2/subtitle.srt"
                 except Exception as e:
                     print(f"[ ERROR ] {e}")
                     subtitle_url = None

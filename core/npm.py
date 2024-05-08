@@ -2,7 +2,7 @@ import os
 
 
 class Npm:
-    def __init__(self, version="1.0.1"):
+    def __init__(self, version="1.0.2"):
         self.version = version
         self.package_string = """{
   "name": "__NAME__",
