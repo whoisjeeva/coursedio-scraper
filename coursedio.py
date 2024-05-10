@@ -85,6 +85,9 @@ def main():
     for d in data:
         category = d["category"]
         for course_index, c in enumerate(d["courses"]):
+            if " ai " in c["title"].lower():
+                print("[ STATUS ] Skipping AI course details for '" + str(c["slug"]) + "'...")
+                continue
             if c["slug"] in GLOBAL_SLUGS:
                 print("[ STATUS ] Skipping course details for '" + str(c["slug"]) + "'...")
                 continue
@@ -123,6 +126,7 @@ def main():
             else:
                 course["excercise_file_url"] = None
 
+            video_count = len(course["videos"])
             for video_index, video in enumerate(course["videos"]):
                 # if os.path.exists("v.mp4"):
                 #     os.remove("v.mp4")
@@ -147,11 +151,11 @@ def main():
                 # os.remove(f"{folder}/video.mp4")
                 # video_url = f"https://unpkg.com/{folder}@1.0.2/video.webm"
                 video_url = f"https://unpkg.com/{folder}@1.0.2/video.mp4"
-                print("[ STATUS ] Uploading video '" + str(video["title"]) + "' from '" + str(c["slug"]) + "'...")
+                print("[ STATUS ] (" + str(video_index+1) + "/" + str(video_count) + ") Uploading video '" + str(video["title"]) + "' from '" + str(c["slug"]) + "'...")
                 
                 try:
                     download_file(scraper.session, subtitle_url, f"{folder}/subtitle.srt")
-                    print("[ STATUS ] Uploading subtitle '" + str(video["title"]) + "' from '" + str(c["slug"]) + "'...")
+                    print("[ STATUS ] (" + str(video_index+1) + "/" + str(video_count) + ") Uploading subtitle '" + str(video["title"]) + "' from '" + str(c["slug"]) + "'...")
                     subtitle_url = f"https://unpkg.com/{folder}@1.0.2/subtitle.srt"
                 except Exception as e:
                     print(f"[ ERROR ] {e}")
