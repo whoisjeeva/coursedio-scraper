@@ -73,19 +73,25 @@ def main():
     scraper.login("33667870", "1609")
     
     if args.category and args.search:
-        data = [{ "category": args.category, "courses": [] }]
-        results = scraper.search(args.search)
-        for d in results["data"]:
-            data[0]["courses"].append({
-                "slug": d["url"],
-                "title": d["title"],
-                "skills": []
-            })
+        new_data = [{ "category": args.category, "courses": [] }]
+        # results = scraper.search(args.search)
+        # for d in results["data"]:
+        category_data = None
+        for d in data:
+            if d["category"] == args.category:
+                category_data = d["courses"]
+        for d in category_data:
+            if args.search.lower() in d["title"].lower():
+                new_data[0]["courses"].append({
+                    "slug": d["url"],
+                    "title": d["title"],
+                    "skills": []
+                })
 
     for d in data:
         category = d["category"]
         for course_index, c in enumerate(d["courses"]):
-            if " ai " in c["title"].lower():
+            if "ai" in c["title"].lower():
                 print("[ STATUS ] Skipping AI course details for '" + str(c["slug"]) + "'...")
                 continue
             if c["slug"] in GLOBAL_SLUGS:
