@@ -159,6 +159,9 @@ def main():
                 
                 video["url"] = video_url
                 video["subtitle"] = subtitle_url
+                video["index"] = video_index+1
+                video["course_slug"] = course["slug"]
+                video["video_slug"] = video_slug
                 npm.publish(folder, folder)
             
             GLOBAL_DATA.append(course)

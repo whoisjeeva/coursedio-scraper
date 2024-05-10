@@ -16,6 +16,7 @@ import re
 import time
 import sys
 import random
+from collections import OrderedDict
 
 
 class Scraper:
@@ -102,7 +103,7 @@ class Scraper:
             }
         )
 
-        data = r.json()
+        data = r.json(object_pairs_hook=OrderedDict)
 
         if "elements" not in data:
             return []
@@ -171,7 +172,7 @@ class Scraper:
 
         r = requests.get(course_slug)
         s = BeautifulSoup(r.content, "html.parser")
-        obj = json.loads(s.select("script[type='application/ld+json']")[0].string)
+        obj = json.loads(s.select("script[type='application/ld+json']")[0].string, object_pairs_hook=OrderedDict)
         # return obj
         parsed = urlparse.urlparse(obj["thumbnailUrl"])
         d = obj["datePublished"].split("-")
@@ -225,7 +226,7 @@ class Scraper:
 
 
 
-            obj = json.loads(code)["included"]
+            obj = json.loads(code, object_pairs_hook=OrderedDict)["included"]
             tmp = {}
             first = None
             last = None
@@ -305,7 +306,7 @@ class Scraper:
             "X-Requested-With": "XMLHttpRequest",
             "csrf-token": self.csrf
         })
-        return r.json()["elements"][0]["exerciseFiles"]
+        return r.json(object_pairs_hook=OrderedDict)["elements"][0]["exerciseFiles"]
 
     
     def get_course_decoration_id(self, course_slug):
@@ -340,7 +341,7 @@ class Scraper:
                 "csrf-token": self.csrf,
                 "X-Requested-With": "XMLHttpRequest"
             })
-            video = r.json()
+            video = r.json(object_pairs_hook=OrderedDict)
             streams = []
             element = None
 
@@ -391,7 +392,7 @@ class Scraper:
             }
         )
 
-        elements = r.json()["elements"]
+        elements = r.json(object_pairs_hook=OrderedDict)["elements"]
         suggestions = []
         for inc in elements:
             suggestions.append(inc["primaryText"]["text"])
